@@ -742,7 +742,7 @@ function initSignaturePads() {
   if (canvasAkash) {
     const ctxA = canvasAkash.getContext('2d');
     const sigImg = new Image();
-    sigImg.src = 'assets/akash_signature.png';
+    sigImg.src = 'akash_signature.png';
     const renderSig = () => {
       ctxA.clearRect(0, 0, canvasAkash.width, canvasAkash.height);
       const aspect = sigImg.width / sigImg.height;
@@ -773,7 +773,7 @@ function initSignaturePads() {
     let hasDrawn = false;
 
     const sigImgS = new Image();
-    sigImgS.src = 'assets/sweety_signature.png';
+    sigImgS.src = 'sweety_signature.png';
     const renderSweetyCanvas = () => {
       ctxS.clearRect(0, 0, canvasSweety.width, canvasSweety.height);
       const aspect = sigImgS.width / sigImgS.height;
