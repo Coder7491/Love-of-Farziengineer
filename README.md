@@ -1,0 +1,5121 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Love of Farzi Engineer | Akash ❤️ Sweety</title>
+  <meta name="description" content="Akash aur Sweety ki dilchasp prem kahani - Ek Farzi Engineer aur uski bug-fixer Sweety ka romantic safari. Pehli mulaqat 11 June 2025, Sweety ka proposal 19 June 2025!">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Fira+Code:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Yatra+One&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Stylesheet -->
+<style>
+/* ==========================================================================
+   LOVE OF FARZI ENGINEER: AKASH & SWEETY
+   Design System, Glassmorphism, Cyber-Romantic Aesthetics & Animations
+   ========================================================================== */
+
+:root {
+  /* Color Palette */
+  --bg-dark: #070a13;
+  --bg-card: rgba(15, 23, 42, 0.75);
+  --bg-card-hover: rgba(30, 41, 67, 0.85);
+  --bg-glass: rgba(15, 23, 42, 0.65);
+  --border-glass: rgba(255, 255, 255, 0.08);
+  --border-glow: rgba(255, 42, 112, 0.35);
+
+  /* Accents */
+  --pink-primary: #ff2a70;
+  --pink-secondary: #f43f5e;
+  --purple-glow: #a855f7;
+  --cyan-accent: #06b6d4;
+  --amber-soft: #fbbf24;
+  --emerald-mint: #10b981;
+
+  /* Typography */
+  --font-main: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-code: 'Fira Code', monospace;
+  --font-hand: 'Dancing Script', cursive;
+
+  /* Text Colors */
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --text-sub: #cbd5e1;
+
+  /* Shadows & Glows */
+  --glow-pink: 0 0 25px rgba(255, 42, 112, 0.45);
+  --glow-purple: 0 0 25px rgba(168, 85, 247, 0.4);
+  --glow-cyan: 0 0 25px rgba(6, 182, 212, 0.35);
+  --card-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.6), 0 0 1px 1px rgba(255, 255, 255, 0.05);
+
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-xl: 30px;
+  --radius-full: 9999px;
+
+  --transition-smooth: all 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Light / Neon Sparkle Accent Overrides if toggled */
+body.alt-neon-mode {
+  --pink-primary: #ec4899;
+  --purple-glow: #8b5cf6;
+  --border-glow: rgba(236, 72, 153, 0.5);
+  --glow-pink: 0 0 35px rgba(236, 72, 153, 0.6);
+}
+
+/* Reset & Basics */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  overflow-x: hidden;
+  max-width: 100vw;
+  width: 100%;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  min-height: 100vh;
+  line-height: 1.6;
+  overflow-x: hidden;
+  max-width: 100vw;
+  width: 100%;
+  position: relative;
+  background-image: 
+    radial-gradient(circle at 15% 20%, rgba(255, 42, 112, 0.12) 0%, transparent 40%),
+    radial-gradient(circle at 85% 60%, rgba(168, 85, 247, 0.12) 0%, transparent 45%),
+    radial-gradient(circle at 50% 90%, rgba(6, 182, 212, 0.08) 0%, transparent 40%);
+  background-attachment: fixed;
+}
+
+/* Background Particle Canvas (Vibrant Romantic Floating Hearts) */
+#particleCanvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.95;
+}
+
+/* Common Layout Helpers */
+.container {
+  width: 90%;
+  max-width: 1220px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.section-padding {
+  padding: 90px 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Typography Helpers */
+.gradient-text {
+  background: linear-gradient(135deg, #ff2a70, #f43f5e, #fb7185);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-romantic {
+  background: linear-gradient(135deg, #ff2a70 0%, #a855f7 50%, #38bdf8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.heart-beat {
+  color: var(--pink-primary);
+  display: inline-block;
+  animation: pulseBeat 0.8s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+  transform-origin: center;
+}
+
+@keyframes pulseBeat {
+  0% { transform: scale(1); filter: drop-shadow(0 0 2px rgba(255, 42, 112, 0.4)); }
+  14% { transform: scale(1.3); filter: drop-shadow(0 0 10px rgba(255, 42, 112, 0.85)); }
+  28% { transform: scale(1); filter: drop-shadow(0 0 3px rgba(255, 42, 112, 0.4)); }
+  42% { transform: scale(1.2); filter: drop-shadow(0 0 8px rgba(255, 42, 112, 0.7)); }
+  70% { transform: scale(1); filter: drop-shadow(0 0 2px rgba(255, 42, 112, 0.4)); }
+  100% { transform: scale(1); filter: drop-shadow(0 0 2px rgba(255, 42, 112, 0.4)); }
+}
+
+/* Section Headings */
+.section-heading {
+  margin-bottom: 50px;
+}
+
+.section-sub {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--pink-primary);
+  background: rgba(255, 42, 112, 0.1);
+  border: 1px solid rgba(255, 42, 112, 0.25);
+  padding: 6px 16px;
+  border-radius: var(--radius-full);
+  margin-bottom: 14px;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  line-height: 1.25;
+  margin-bottom: 12px;
+}
+
+.section-desc {
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+/* BUTTONS */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-family: var(--font-main);
+  font-weight: 600;
+  font-size: 0.98rem;
+  padding: 13px 26px;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  border: none;
+  transition: var(--transition-smooth);
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--pink-primary) 0%, #d91b5c 100%);
+  color: #fff;
+  box-shadow: 0 4px 18px rgba(255, 42, 112, 0.38);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(255, 42, 112, 0.55);
+}
+
+.btn-secondary {
+  background: rgba(255, 255, 255, 0.07);
+  color: var(--text-main);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(8px);
+}
+
+.btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.14);
+  border-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--text-sub);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.btn-outline:hover:not(:disabled) {
+  border-color: var(--pink-primary);
+  color: #fff;
+}
+
+.btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  transform: none !important;
+}
+
+.btn-lg {
+  padding: 16px 36px;
+  font-size: 1.15rem;
+}
+
+.pulse-glow {
+  animation: pulseGlow 1.2s infinite ease-in-out;
+  transform-origin: center;
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(255, 42, 112, 0.4), 0 0 5px rgba(168, 85, 247, 0.2);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 0 35px rgba(255, 42, 112, 0.8), 0 0 20px rgba(168, 85, 247, 0.5), 0 0 45px rgba(255, 42, 112, 0.3);
+    transform: scale(1.025);
+  }
+}
+
+/* QUICK FLOATING DOCK */
+.quick-control-dock {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.dock-btn {
+  background: rgba(15, 23, 42, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 600;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  transition: var(--transition-smooth);
+}
+
+.dock-btn:hover {
+  background: var(--pink-primary);
+  border-color: var(--pink-primary);
+  transform: translateX(-4px) scale(1.05);
+}
+
+.dock-btn.playing {
+  background: linear-gradient(135deg, var(--pink-primary), var(--purple-glow));
+  border-color: #fff;
+}
+
+/* ==========================================================================
+   HEADER
+   ========================================================================== */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background: rgba(7, 10, 19, 0.82);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--border-glass);
+  padding: 14px 0;
+}
+
+.header-container {
+  width: 95%;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.brand-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+  min-width: 0;
+}
+
+.brand-badge-img {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-full);
+  border: 2px solid var(--pink-primary);
+  box-shadow: var(--glow-pink);
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.brand-text {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.brand-title {
+  font-weight: 800;
+  font-size: clamp(0.95rem, 3.8vw, 1.15rem);
+  display: block;
+  line-height: 1.25;
+}
+
+.brand-sub {
+  font-size: clamp(0.7rem, 2.7vw, 0.78rem);
+  color: var(--text-muted);
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  line-height: 1.2;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-shrink: 1;
+}
+
+.nav-link {
+  color: var(--text-sub);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.83rem;
+  padding: 7px 11px;
+  border-radius: var(--radius-full);
+  transition: var(--transition-smooth);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.nav-link:hover, .nav-link.active {
+  color: #fff;
+  background: rgba(255, 42, 112, 0.12);
+}
+
+.nav-link.nav-highlight {
+  background: linear-gradient(135deg, rgba(255, 42, 112, 0.2), rgba(168, 85, 247, 0.2));
+  border: 1px solid rgba(255, 42, 112, 0.4);
+  color: #fff;
+  white-space: nowrap;
+}
+
+.status-pill {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(16, 185, 129, 0.1);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  padding: 6px 14px;
+  border-radius: var(--radius-full);
+  font-family: var(--font-code);
+  font-size: 0.78rem;
+  color: var(--emerald-mint);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--emerald-mint);
+  box-shadow: 0 0 10px var(--emerald-mint);
+  animation: blink 1.5s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+/* ==========================================================================
+   HERO SECTION
+   ========================================================================== */
+.hero-section {
+  padding: 80px 0 60px;
+  position: relative;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.tag-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 42, 112, 0.12);
+  border: 1px solid rgba(255, 42, 112, 0.3);
+  color: #fff;
+  padding: 6px 14px;
+  border-radius: var(--radius-full);
+  font-size: clamp(0.72rem, 2.6vw, 0.86rem);
+  font-weight: 600;
+  margin-bottom: 22px;
+  max-width: 100%;
+  box-sizing: border-box;
+  line-height: 1.35;
+}
+
+.tag-badge i {
+  flex-shrink: 0;
+  color: var(--pink-primary);
+}
+
+.tag-badge span {
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+.hero-heading {
+  font-size: clamp(1.8rem, 5.2vw, 3.2rem);
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+  margin-bottom: 20px;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+.highlight-code {
+  font-family: var(--font-code);
+  color: var(--cyan-accent);
+  background: rgba(6, 182, 212, 0.12);
+  padding: 2px 8px;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(6, 182, 212, 0.25);
+  display: inline-block;
+  max-width: 100%;
+  word-break: break-word;
+}
+
+.hero-description {
+  font-size: clamp(0.95rem, 2.6vw, 1.18rem);
+  color: var(--text-sub);
+  margin-bottom: 30px;
+  line-height: 1.65;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+.hero-description strong {
+  color: #fff;
+}
+
+.hero-cta-group {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.hero-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.metric-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-glass);
+  padding: 14px 16px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  transition: var(--transition-smooth);
+}
+
+.metric-card:hover {
+  border-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-3px);
+}
+
+.metric-card.highlight-metric {
+  border-color: var(--border-glow);
+  background: rgba(255, 42, 112, 0.08);
+}
+
+.metric-icon {
+  font-size: 1.5rem;
+  color: var(--pink-primary);
+}
+
+.metric-data {
+  display: flex;
+  flex-direction: column;
+}
+
+.metric-val {
+  font-size: 1rem;
+  font-weight: 800;
+  color: #fff;
+}
+
+.metric-title {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+/* HERO VISUAL CARD */
+.hero-card-wrapper {
+  position: relative;
+}
+
+.card-glow-bg {
+  position: absolute;
+  inset: -12px;
+  background: linear-gradient(135deg, var(--pink-primary), var(--purple-glow), var(--cyan-accent));
+  filter: blur(30px);
+  opacity: 0.45;
+  border-radius: var(--radius-xl);
+  z-index: 0;
+  animation: auraGlow 3.2s ease-in-out infinite alternate;
+}
+
+.hero-card {
+  position: relative;
+  z-index: 1;
+  background: #0d121f;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--card-shadow);
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s ease;
+}
+
+.hero-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px -10px rgba(0, 0, 0, 0.7), 0 0 30px rgba(255, 42, 112, 0.25);
+}
+
+.card-header-bar {
+  background: #151c2e;
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--border-glass);
+}
+
+.window-dots {
+  display: flex;
+  gap: 6px;
+}
+
+.window-dots .dot {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+}
+
+.dot.red { background: #ef4444; }
+.dot.yellow { background: #eab308; }
+.dot.green { background: #22c55e; }
+
+.window-title {
+  font-family: var(--font-code);
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.coffee-tag {
+  font-size: 0.75rem;
+  color: var(--amber-soft);
+  font-weight: 600;
+  animation: floatGentle 1.8s ease-in-out infinite;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.hero-image-box {
+  position: relative;
+  height: 380px;
+  overflow: hidden;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 20%;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.hero-card:hover .hero-img {
+  transform: scale(1.04);
+}
+
+.image-overlay-badge {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  animation: floatGentle 2.0s ease-in-out infinite 0.3s;
+  color: #fff;
+  padding: 6px 14px;
+  border-radius: var(--radius-full);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.code-snippet-box {
+  background: #080c14;
+  padding: 16px;
+  font-family: var(--font-code);
+  font-size: 0.82rem;
+  border-top: 1px solid var(--border-glass);
+  line-height: 1.55;
+  overflow-x: auto;
+}
+
+.code-keyword { color: #f43f5e; font-weight: 600; }
+.code-var { color: #38bdf8; }
+.code-prop { color: #a78bfa; }
+.code-str { color: #34d399; }
+.code-func { color: #f59e0b; }
+
+/* ==========================================================================
+   MILESTONES & LIVE TIMER
+   ========================================================================== */
+.milestones-section {
+  background: rgba(11, 16, 29, 0.6);
+  border-top: 1px solid var(--border-glass);
+  border-bottom: 1px solid var(--border-glass);
+}
+
+.counter-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.counter-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-glass);
+  border-radius: var(--radius-lg);
+  padding: 30px;
+  backdrop-filter: blur(14px);
+  box-shadow: var(--card-shadow);
+  position: relative;
+  overflow: hidden;
+  transition: var(--transition-smooth);
+}
+
+.counter-card:hover {
+  border-color: rgba(255, 255, 255, 0.18);
+  transform: translateY(-4px);
+}
+
+.counter-card.main-timer {
+  border-top: 3px solid var(--cyan-accent);
+}
+
+.counter-card.proposal-timer {
+  border-top: 3px solid var(--pink-primary);
+  background: linear-gradient(180deg, rgba(255, 42, 112, 0.08) 0%, rgba(15, 23, 42, 0.8) 100%);
+}
+
+.counter-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.counter-header i {
+  font-size: 1.4rem;
+  color: var(--pink-primary);
+}
+
+.counter-header h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.timer-display {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: var(--radius-md);
+  padding: 20px 10px;
+  margin-bottom: 18px;
+}
+
+.time-block {
+  text-align: center;
+  flex: 1;
+}
+
+.time-num {
+  display: block;
+  font-family: var(--font-code);
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #fff;
+  line-height: 1;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.time-unit {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  letter-spacing: 1px;
+  margin-top: 6px;
+  display: block;
+}
+
+.time-sep {
+  font-size: 1.8rem;
+  color: var(--pink-primary);
+  font-weight: 700;
+  opacity: 0.6;
+}
+
+.timer-caption {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  text-align: center;
+}
+
+/* Milestone Ribbon */
+.milestone-ribbon {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.ribbon-item {
+  background: rgba(15, 23, 42, 0.5);
+  border: 1px solid var(--border-glass);
+  padding: 20px 15px;
+  border-radius: var(--radius-md);
+  text-align: center;
+  transition: var(--transition-smooth);
+}
+
+.ribbon-item:hover {
+  background: rgba(255, 42, 112, 0.1);
+  border-color: var(--border-glow);
+}
+
+.ribbon-icon {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.ribbon-count {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #fff;
+}
+
+.ribbon-label {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+/* ==========================================================================
+   STORIABLE SECTION (TIMELINE / CHAPTERS)
+   ========================================================================== */
+.story-section {
+  position: relative;
+}
+
+.story-nav-bar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 35px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+.story-tab {
+  background: rgba(15, 23, 42, 0.7);
+  border: 1px solid var(--border-glass);
+  color: var(--text-muted);
+  padding: 12px 20px;
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-main);
+  font-weight: 600;
+  font-size: 0.92rem;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: var(--transition-smooth);
+}
+
+.story-tab:hover {
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.story-tab.active {
+  background: linear-gradient(135deg, var(--pink-primary), #be123c);
+  border-color: var(--pink-primary);
+  color: #fff;
+  box-shadow: 0 4px 18px rgba(255, 42, 112, 0.35);
+}
+
+.tab-badge {
+  font-family: var(--font-code);
+  font-size: 0.75rem;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 2px 7px;
+  border-radius: var(--radius-sm);
+}
+
+.story-viewport {
+  position: relative;
+  min-height: 440px;
+}
+
+.story-chapter {
+  display: none;
+}
+
+.story-chapter.active {
+  display: block;
+  animation: chapterFadeSlide 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.chapter-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 40px;
+  align-items: center;
+  background: var(--bg-card);
+  border: 1px solid var(--border-glass);
+  padding: 35px;
+  border-radius: var(--radius-xl);
+  backdrop-filter: blur(14px);
+  box-shadow: var(--card-shadow);
+}
+
+.chapter-grid.reverse {
+  grid-template-columns: 1.1fr 0.9fr;
+}
+
+.chapter-media {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.chapter-img {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  object-position: center 20%;
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.chapter-img.chapter1-img {
+  object-position: center 25%;
+}
+
+.chapter-img.chapter2-chat-img {
+  height: 480px;
+  object-fit: contain;
+  background: #0b141a;
+  padding: 8px;
+  border: 1px solid rgba(37, 211, 102, 0.35);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.55), 0 0 20px rgba(37, 211, 102, 0.15);
+}
+
+.chapter-img.chapter3-rose-img {
+  height: 380px;
+  object-fit: cover;
+  object-position: center 40%;
+  border: 1px solid rgba(255, 42, 112, 0.3);
+  box-shadow: 0 8px 25px rgba(255, 42, 112, 0.2);
+}
+
+.chapter-img.chapter4-station-img {
+  height: 380px;
+  object-fit: cover;
+  object-position: center 45%;
+  border: 1px solid rgba(255, 42, 112, 0.3);
+  box-shadow: 0 8px 25px rgba(255, 42, 112, 0.2);
+}
+
+.chapter-img.chapter5-forever-img {
+  height: 480px;
+  object-fit: contain;
+  background: #0b101d;
+  padding: 6px;
+  border: 1px solid rgba(255, 42, 112, 0.4);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6), 0 0 25px rgba(255, 42, 112, 0.25);
+}
+
+.chapter-img.center-badge {
+  object-fit: contain;
+  background: #0f172a;
+  padding: 20px;
+}
+
+.chapter-date-tag {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background: rgba(15, 23, 42, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  padding: 6px 14px;
+  border-radius: var(--radius-full);
+  font-size: 0.85rem;
+  font-weight: 700;
+  backdrop-filter: blur(8px);
+}
+
+.chapter-date-tag.date-tag-right {
+  left: auto;
+  right: 14px;
+}
+
+.chapter-date-tag.highlight {
+  background: var(--pink-primary);
+  border-color: #fff;
+  box-shadow: 0 0 15px rgba(255, 42, 112, 0.5);
+}
+
+.commit-pill {
+  display: inline-block;
+  font-family: var(--font-code);
+  font-size: 0.8rem;
+  color: var(--cyan-accent);
+  background: rgba(6, 182, 212, 0.1);
+  border: 1px solid rgba(6, 182, 212, 0.25);
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  margin-bottom: 14px;
+}
+
+.commit-pill.highlight {
+  color: var(--pink-primary);
+  background: rgba(255, 42, 112, 0.1);
+  border-color: rgba(255, 42, 112, 0.3);
+}
+
+.chapter-title {
+  font-size: 1.85rem;
+  font-weight: 800;
+  margin-bottom: 16px;
+  line-height: 1.3;
+}
+
+.chapter-text {
+  color: var(--text-sub);
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+.chapter-fun-fact {
+  background: rgba(255, 255, 255, 0.04);
+  border-left: 4px solid var(--amber-soft);
+  padding: 12px 18px;
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 0.94rem;
+  margin-top: 18px;
+  color: var(--text-main);
+}
+
+.chapter-fun-fact i {
+  color: var(--amber-soft);
+  font-size: 1.2rem;
+  margin-top: 2px;
+}
+
+.chapter-fun-fact.highlight {
+  border-left-color: var(--pink-primary);
+  background: rgba(255, 42, 112, 0.08);
+}
+
+.chapter-fun-fact.highlight i {
+  color: var(--pink-primary);
+}
+
+/* Chat Mockup in Chapter 3 */
+.chat-mockup {
+  background: #0d1322;
+  border: 1px solid var(--border-glass);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.chat-bubble {
+  max-width: 85%;
+  padding: 10px 14px;
+  border-radius: var(--radius-md);
+  font-size: 0.88rem;
+  line-height: 1.4;
+}
+
+.chat-sender {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  margin-bottom: 3px;
+}
+
+.chat-bubble.left {
+  align-self: flex-start;
+  background: rgba(255, 42, 112, 0.15);
+  border: 1px solid rgba(255, 42, 112, 0.3);
+  color: #fff;
+}
+
+.chat-bubble.left .chat-sender {
+  color: var(--pink-primary);
+}
+
+.chat-bubble.right {
+  align-self: flex-end;
+  background: rgba(6, 182, 212, 0.15);
+  border: 1px solid rgba(6, 182, 212, 0.3);
+  color: #fff;
+}
+
+.chat-bubble.right .chat-sender {
+  color: var(--cyan-accent);
+}
+
+/* Quote Poster in Chapter 4 */
+.quote-poster-card {
+  background: linear-gradient(135deg, rgba(168, 85, 247, 0.15), rgba(255, 42, 112, 0.15));
+  border: 1px solid rgba(168, 85, 247, 0.3);
+  border-radius: var(--radius-lg);
+  padding: 35px 25px;
+  text-align: center;
+}
+
+.quote-big {
+  font-size: 2.5rem;
+  color: var(--purple-glow);
+  opacity: 0.6;
+  margin-bottom: 12px;
+}
+
+.quote-text {
+  font-size: 1.35rem;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #fff;
+  margin-bottom: 18px;
+}
+
+.quote-author {
+  font-family: var(--font-code);
+  font-size: 0.85rem;
+  color: var(--pink-primary);
+}
+
+/* Code Snippet in Chapter 5 */
+.code-terminal-snippet {
+  background: #090e1a;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-md);
+  padding: 16px;
+  font-family: var(--font-code);
+  font-size: 0.9rem;
+  margin: 18px 0;
+  line-height: 1.6;
+}
+
+.c-key { color: #f43f5e; font-weight: 700; }
+.c-val { color: #38bdf8; }
+.c-bool { color: #eab308; }
+.c-func { color: #a855f7; }
+.c-comment { color: #64748b; font-style: italic; }
+
+/* Story Controls */
+.story-stepper-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.chapter-progress-indicator {
+  font-family: var(--font-code);
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+/* ==========================================================================
+   FARZI ENGINEER LOVE QUIZ
+   ========================================================================== */
+.quiz-section {
+  background: rgba(11, 16, 29, 0.5);
+  border-top: 1px solid var(--border-glass);
+}
+
+.quiz-container {
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.quiz-top-bar {
+  margin-bottom: 25px;
+}
+
+.quiz-progress-track {
+  width: 100%;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+
+.quiz-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--cyan-accent), var(--pink-primary));
+  transition: width 0.4s ease;
+}
+
+.quiz-meta-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.score-pill {
+  background: rgba(255, 42, 112, 0.12);
+  border: 1px solid rgba(255, 42, 112, 0.3);
+  color: #fff;
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+}
+
+.score-pill strong {
+  color: var(--pink-primary);
+}
+
+/* Quiz Card */
+.quiz-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-glass);
+  border-radius: var(--radius-xl);
+  padding: 40px;
+  box-shadow: var(--card-shadow);
+  position: relative;
+  backdrop-filter: blur(16px);
+}
+
+.question-icon-badge {
+  width: 48px;
+  height: 48px;
+  background: rgba(255, 42, 112, 0.15);
+  border: 1px solid rgba(255, 42, 112, 0.35);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--pink-primary);
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+}
+
+.quiz-question-title {
+  font-size: 1.45rem;
+  font-weight: 800;
+  line-height: 1.35;
+  margin-bottom: 8px;
+}
+
+.quiz-question-context {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin-bottom: 24px;
+}
+
+.quiz-options-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.quiz-option-btn {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: var(--text-main);
+  padding: 16px 20px;
+  border-radius: var(--radius-md);
+  text-align: left;
+  font-family: var(--font-main);
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  transition: var(--transition-smooth);
+}
+
+.quiz-option-btn:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.09);
+  border-color: rgba(255, 255, 255, 0.25);
+  transform: translateX(4px);
+}
+
+.option-prefix {
+  font-family: var(--font-code);
+  font-size: 0.85rem;
+  font-weight: 700;
+  background: rgba(255, 255, 255, 0.1);
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-sm);
+  flex-shrink: 0;
+}
+
+.quiz-option-btn.correct {
+  background: rgba(16, 185, 129, 0.2) !important;
+  border-color: var(--emerald-mint) !important;
+  color: #fff !important;
+}
+
+.quiz-option-btn.correct .option-prefix {
+  background: var(--emerald-mint);
+  color: #000;
+}
+
+.quiz-option-btn.wrong {
+  background: rgba(239, 68, 68, 0.2) !important;
+  border-color: #ef4444 !important;
+  color: #fff !important;
+}
+
+.quiz-option-btn.wrong .option-prefix {
+  background: #ef4444;
+  color: #fff;
+}
+
+/* Feedback Box */
+.quiz-feedback-box {
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid var(--border-glass);
+  padding: 16px 20px;
+  border-radius: var(--radius-md);
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.quiz-feedback-box.correct-box {
+  border-color: rgba(16, 185, 129, 0.4);
+  background: rgba(16, 185, 129, 0.08);
+}
+
+.quiz-feedback-box.wrong-box {
+  border-color: rgba(239, 68, 68, 0.4);
+  background: rgba(239, 68, 68, 0.08);
+}
+
+.feedback-icon {
+  font-size: 1.6rem;
+}
+
+.feedback-text {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.quiz-action-bar {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Quiz Result Card */
+.quiz-result-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-glow);
+  border-radius: var(--radius-xl);
+  padding: 50px 35px;
+  text-align: center;
+  box-shadow: var(--glow-pink);
+  backdrop-filter: blur(16px);
+}
+
+.confetti-cannon-icon {
+  font-size: 3.5rem;
+  margin-bottom: 12px;
+}
+
+.result-title {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.result-score-circle {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(255, 42, 112, 0.2), rgba(168, 85, 247, 0.2));
+  border: 3px solid var(--pink-primary);
+  margin: 0 auto 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 25px rgba(255, 42, 112, 0.35);
+}
+
+.result-points {
+  font-family: var(--font-code);
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #fff;
+  line-height: 1;
+}
+
+.result-subtext {
+  font-size: 0.8rem;
+  color: var(--pink-primary);
+  font-weight: 700;
+  margin-top: 4px;
+}
+
+.result-commentary {
+  font-size: 1.15rem;
+  color: var(--text-sub);
+  max-width: 580px;
+  margin: 0 auto 25px;
+  line-height: 1.6;
+}
+
+.result-badge-awarded {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(251, 191, 36, 0.12);
+  border: 1px solid rgba(251, 191, 36, 0.35);
+  color: var(--amber-soft);
+  padding: 8px 20px;
+  border-radius: var(--radius-full);
+  font-size: 0.95rem;
+  margin-bottom: 30px;
+}
+
+.result-btns {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* ==========================================================================
+   SECRET LOVE TERMINAL
+   ========================================================================== */
+.terminal-section {
+  position: relative;
+}
+
+.terminal-shell {
+  max-width: 900px;
+  margin: 0 auto;
+  background: #090d16;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.6), var(--glow-cyan);
+  overflow: hidden;
+}
+
+.terminal-header {
+  background: #141b2d;
+  padding: 12px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.terminal-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.t-btn {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.t-close { background: #ef4444; }
+.t-min { background: #eab308; }
+.t-max { background: #22c55e; }
+
+.terminal-title {
+  font-family: var(--font-code);
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+.terminal-status {
+  font-size: 0.78rem;
+  color: var(--pink-primary);
+  font-weight: 600;
+}
+
+.terminal-body {
+  padding: 24px;
+  font-family: var(--font-code);
+  font-size: 0.92rem;
+  min-height: 280px;
+  max-height: 380px;
+  overflow-y: auto;
+  line-height: 1.7;
+  color: #cbd5e1;
+}
+
+.t-line {
+  margin-bottom: 6px;
+}
+
+.t-line.info-line {
+  color: #64748b;
+}
+
+.cmd-highlight {
+  color: var(--amber-soft);
+  font-weight: 600;
+}
+
+.prompt-line {
+  margin-top: 14px;
+}
+
+.t-prompt {
+  color: var(--pink-primary);
+  font-weight: 700;
+  margin-right: 8px;
+}
+
+.t-static {
+  color: #fff;
+}
+
+.output-line.success {
+  color: #34d399;
+}
+
+.output-line.romantic {
+  color: #f472b6;
+}
+
+.output-line.ascii {
+  color: var(--amber-soft);
+  white-space: pre;
+  font-size: 0.82rem;
+  line-height: 1.25;
+}
+
+/* Quick Commands Bar */
+.quick-commands-bar {
+  background: #101626;
+  padding: 10px 18px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  overflow-x: auto;
+}
+
+.quick-label {
+  font-size: 0.76rem;
+  color: var(--text-muted);
+  white-space: nowrap;
+  font-family: var(--font-code);
+}
+
+.t-pill-btn {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: var(--cyan-accent);
+  font-family: var(--font-code);
+  font-size: 0.78rem;
+  padding: 4px 10px;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: var(--transition-smooth);
+}
+
+.t-pill-btn:hover {
+  background: var(--cyan-accent);
+  color: #000;
+}
+
+/* Terminal Input Bar */
+.terminal-input-bar {
+  display: flex;
+  align-items: center;
+  padding: 14px 20px;
+  background: #090d16;
+}
+
+#terminalInput {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-family: var(--font-code);
+  font-size: 0.95rem;
+  flex: 1;
+}
+
+.terminal-submit-btn {
+  background: transparent;
+  border: none;
+  color: var(--pink-primary);
+  font-size: 1.1rem;
+  cursor: pointer;
+  padding: 4px 8px;
+}
+
+/* ==========================================================================
+   OFFICIAL LOVE AGREEMENT / CONTRACT
+   ========================================================================== */
+.contract-section {
+  position: relative;
+}
+
+.contract-paper {
+  max-width: 880px;
+  margin: 0 auto;
+  background: #ffffff;
+  color: #1e293b;
+  border-radius: var(--radius-lg);
+  padding: 50px 60px;
+  position: relative;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.5), 0 0 35px rgba(255, 42, 112, 0.25);
+  overflow: hidden;
+}
+
+.contract-watermark {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-30deg);
+  font-size: 5rem;
+  font-weight: 900;
+  color: rgba(255, 42, 112, 0.04);
+  white-space: nowrap;
+  pointer-events: none;
+  user-select: none;
+}
+
+.contract-header {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 25px;
+}
+
+.contract-seal-img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 3px solid #ff2a70;
+  box-shadow: 0 4px 14px rgba(255, 42, 112, 0.3);
+}
+
+.contract-title-wrap h2 {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #0f172a;
+  letter-spacing: -0.5px;
+  margin-bottom: 4px;
+}
+
+.contract-title-wrap p {
+  font-size: 0.88rem;
+  color: #64748b;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.contract-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  font-size: 0.84rem;
+  color: #334155;
+}
+
+.contract-meta span strong {
+  color: #ff2a70;
+}
+
+.contract-divider {
+  border: none;
+  height: 2px;
+  background: linear-gradient(90deg, #ff2a70, #a855f7, #38bdf8);
+  margin-bottom: 30px;
+}
+
+.contract-terms {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-bottom: 35px;
+}
+
+.term-item {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  padding: 10px 14px;
+  border-radius: var(--radius-sm);
+  background: #f8fafc;
+  border-left: 3px solid #ff2a70;
+}
+
+.term-num {
+  font-family: var(--font-code);
+  font-weight: 700;
+  font-size: 0.82rem;
+  color: #ff2a70;
+  background: #ffe4e6;
+  padding: 3px 8px;
+  border-radius: var(--radius-sm);
+  white-space: nowrap;
+}
+
+.term-content {
+  font-size: 0.95rem;
+  color: #334155;
+  line-height: 1.55;
+}
+
+.term-content strong {
+  color: #0f172a;
+}
+
+/* Signatures */
+.signature-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 35px;
+  padding-top: 20px;
+  border-top: 1px dashed #cbd5e1;
+}
+
+.sig-box {
+  background: #f1f5f9;
+  border: 1px solid #cbd5e1;
+  border-radius: var(--radius-md);
+  padding: 16px;
+  text-align: center;
+}
+
+.sig-title {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 10px;
+}
+
+.sig-canvas-wrap {
+  position: relative;
+  background: #ffffff;
+  border: 1px dashed #94a3b8;
+  border-radius: var(--radius-sm);
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.akash-sig-img {
+  max-height: 72px;
+  max-width: 210px;
+  object-fit: contain;
+  pointer-events: none;
+  filter: drop-shadow(0 1px 2px rgba(30, 58, 138, 0.25));
+  transition: transform 0.3s ease;
+}
+
+.sweety-sig-img {
+  max-height: 60px;
+  max-width: 210px;
+  object-fit: contain;
+  pointer-events: none;
+  filter: drop-shadow(0 1px 2px rgba(190, 24, 93, 0.25));
+  transition: transform 0.3s ease;
+}
+
+.sig-box:hover .akash-sig-img,
+.sig-box:hover .sweety-sig-img {
+  transform: scale(1.05);
+}
+
+.sig-stamp {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: #10b981;
+  border: 1px solid #10b981;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.sig-stamp.sig-stamp-sweety {
+  color: var(--pink-primary);
+  border-color: var(--pink-primary);
+}
+
+.sig-placeholder {
+  position: absolute;
+  color: #94a3b8;
+  font-size: 0.85rem;
+  pointer-events: none;
+}
+
+.sig-hint {
+  font-size: 0.75rem;
+  color: #64748b;
+  margin-top: 6px;
+  display: block;
+}
+
+.sig-action-links {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.sig-btn {
+  background: transparent;
+  border: none;
+  color: #2563eb;
+  font-size: 0.8rem;
+  cursor: pointer;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.sig-btn:hover {
+  text-decoration: underline;
+}
+
+.contract-footer {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+/* ==========================================================================
+   CAPSULE & LOVE LETTER
+   ========================================================================== */
+.capsule-box {
+  background: var(--bg-card);
+  border: 1px solid var(--border-glass);
+  border-radius: var(--radius-xl);
+  padding: 50px 30px;
+  max-width: 740px;
+  margin: 0 auto;
+  box-shadow: var(--card-shadow);
+  backdrop-filter: blur(16px);
+}
+
+.capsule-icon-wrap {
+  width: 80px;
+  height: 80px;
+  background: rgba(255, 42, 112, 0.15);
+  border: 2px solid rgba(255, 42, 112, 0.4);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+
+.capsule-icon {
+  font-size: 2.2rem;
+  color: var(--pink-primary);
+}
+
+.capsule-title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.capsule-intro {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  margin-bottom: 28px;
+}
+
+/* MODAL OVERLAY */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(10px);
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.modal-overlay.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal-card {
+  position: relative;
+  max-width: 680px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  animation: modalPop 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes modalPop {
+  0% { transform: scale(0.9) translateY(20px); opacity: 0; }
+  100% { transform: scale(1) translateY(0); opacity: 1; }
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  background: rgba(0, 0, 0, 0.2);
+  border: none;
+  font-size: 2rem;
+  color: #334155;
+  cursor: pointer;
+  z-index: 10;
+  line-height: 1;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-close-btn:hover {
+  color: #ff2a70;
+}
+
+.letter-paper {
+  background: #fffdfa;
+  border: 1px solid #e2e8f0;
+  border-radius: var(--radius-lg);
+  padding: 45px 50px;
+  color: #1e293b;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6);
+  position: relative;
+}
+
+.letter-stamp {
+  position: absolute;
+  top: 25px;
+  right: 65px;
+  width: 65px;
+  height: 65px;
+  border: 2px dashed #ff2a70;
+  padding: 3px;
+  border-radius: var(--radius-sm);
+}
+
+.letter-stamp img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.letter-salutation {
+  font-family: var(--font-hand);
+  font-size: 2.2rem;
+  color: #ff2a70;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.letter-body-text {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #334155;
+}
+
+.letter-body-text p {
+  margin-bottom: 16px;
+}
+
+.letter-poetry {
+  background: #fdf2f8;
+  border-left: 3px solid #ff2a70;
+  padding: 16px 20px;
+  border-radius: var(--radius-sm);
+  font-size: 1.15rem;
+  color: #9d174d;
+  margin: 22px 0;
+  line-height: 1.8;
+}
+
+.letter-sign-off {
+  margin-top: 30px;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+}
+
+.font-handwriting {
+  font-family: var(--font-hand);
+  font-size: 1.8rem;
+  color: #ff2a70;
+}
+
+/* ==========================================================================
+   INTERACTIVE PROPOSAL & RUNAWAY BUTTON ARENA
+   ========================================================================== */
+.proposal-interactive-section {
+  position: relative;
+}
+
+.interactive-proposal-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-glow);
+  border-radius: var(--radius-xl);
+  padding: 60px 40px;
+  max-width: 820px;
+  margin: 0 auto;
+  box-shadow: var(--glow-pink);
+  backdrop-filter: blur(16px);
+  position: relative;
+}
+
+.card-sparkles {
+  font-size: 2.2rem;
+  margin-bottom: 12px;
+  display: inline-block;
+  animation: floatGentle 1.6s ease-in-out infinite;
+}
+
+.proposal-main-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1.25;
+  margin-bottom: 14px;
+}
+
+.proposal-sub {
+  font-size: 1.15rem;
+  color: var(--text-muted);
+  max-width: 620px;
+  margin: 0 auto 35px;
+}
+
+.interactive-btn-arena {
+  position: relative;
+  min-height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  padding: 10px;
+}
+
+.btn-yes {
+  --yes-scale: 1;
+  background: linear-gradient(135deg, #ff2a70, #f43f5e);
+  color: #fff;
+  font-size: 1.35rem;
+  padding: 18px 45px;
+  border-radius: var(--radius-full);
+  font-weight: 800;
+  box-shadow: 0 8px 30px rgba(255, 42, 112, 0.5);
+  cursor: pointer;
+  border: none;
+  transform: scale(var(--yes-scale));
+  transition: transform 0.15s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.15s ease;
+  animation: yesExcitedBeat 0.95s infinite ease-in-out;
+}
+
+.btn-yes:hover {
+  transform: scale(calc(var(--yes-scale) * 1.1));
+  box-shadow: 0 14px 45px rgba(255, 42, 112, 0.75), 0 0 20px rgba(255, 42, 112, 0.5);
+}
+
+.btn-no {
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  padding: 14px 30px;
+  border-radius: var(--radius-full);
+  font-weight: 700;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.16s cubic-bezier(0.34, 1.56, 0.64, 1), background-color 0.15s, color 0.15s;
+  user-select: none;
+  touch-action: manipulation;
+}
+
+.btn-no.dodge-wobble {
+  animation: dodgeWobble 0.22s ease-in-out;
+}
+
+.runaway-hint {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  margin-top: 15px;
+  min-height: 22px;
+  transition: color 0.3s ease;
+}
+
+/* CELEBRATION FULLSCREEN */
+.celebration-screen {
+  position: fixed;
+  inset: 0;
+  background: rgba(7, 10, 19, 0.94);
+  backdrop-filter: blur(18px);
+  z-index: 3000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  animation: screenFadeIn 0.4s ease forwards;
+}
+
+.celebration-screen.hidden {
+  display: none;
+}
+
+.celebration-inner {
+  max-width: 680px;
+  animation: modalPopSpring 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.ring-fireworks {
+  font-size: 3rem;
+  margin-bottom: 12px;
+}
+
+.celebration-title {
+  font-size: 2.8rem;
+  font-weight: 900;
+  background: linear-gradient(135deg, #ff2a70, #f43f5e, #38bdf8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 12px;
+}
+
+.celebration-sub {
+  font-size: 1.25rem;
+  color: var(--text-sub);
+  margin-bottom: 25px;
+}
+
+.celebration-img-wrap {
+  width: 100%;
+  max-height: 380px;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  border: 2px solid var(--pink-primary);
+  box-shadow: var(--glow-pink);
+  margin-bottom: 25px;
+  background: #000;
+}
+
+.celebration-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 25%;
+  transition: transform 0.4s ease;
+}
+
+.celebration-img-wrap:hover .celebration-img {
+  transform: scale(1.03);
+}
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+.site-footer {
+  background: #05080e;
+  border-top: 1px solid var(--border-glass);
+  padding: 40px 0;
+}
+
+.footer-content {
+  text-align: center;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.footer-badge {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.footer-text {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+}
+
+.footer-text strong {
+  color: var(--pink-primary);
+}
+
+.footer-credits {
+  font-size: 0.8rem;
+  color: #64748b;
+}
+
+/* ==========================================================================
+   PRINT STYLES FOR LOVE CONTRACT (1-PAGE PDF EXPORT)
+   ========================================================================== */
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 8mm 10mm;
+  }
+
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  body {
+    background: #ffffff !important;
+    color: #1e293b !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 13px !important;
+  }
+
+  /* Hide entire website except the contract paper */
+  .site-header,
+  .quick-control-dock,
+  #particleCanvas,
+  .hero-section,
+  .milestones-section,
+  .story-section,
+  .quiz-section,
+  .terminal-section,
+  .capsule-section,
+  .proposal-interactive-section,
+  .site-footer,
+  .celebration-screen,
+  .modal-overlay,
+  .contract-section .section-heading,
+  .contract-footer {
+    display: none !important;
+  }
+
+  /* Make contract take full page cleanly */
+  .contract-section {
+    padding: 0 !important;
+    margin: 0 !important;
+    background: transparent !important;
+    display: block !important;
+    width: 100% !important;
+  }
+
+  .contract-section .container {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .contract-paper {
+    background: #ffffff !important;
+    color: #0f172a !important;
+    border: 2px solid #0f172a !important;
+    border-radius: 8px !important;
+    padding: 18px 22px !important;
+    margin: 0 auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-shadow: none !important;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+
+  .contract-watermark {
+    display: none !important;
+  }
+
+  .contract-header {
+    display: flex !important;
+    align-items: center !important;
+    gap: 14px !important;
+    margin-bottom: 10px !important;
+  }
+
+  .contract-seal-img {
+    width: 55px !important;
+    height: 55px !important;
+    border-radius: 50% !important;
+    border: 2px solid #ff2a70 !important;
+  }
+
+  .contract-title-wrap h2 {
+    font-size: 1.15rem !important;
+    font-weight: 800 !important;
+    color: #0f172a !important;
+    margin-bottom: 2px !important;
+  }
+
+  .contract-title-wrap p {
+    font-size: 0.72rem !important;
+    color: #64748b !important;
+    margin-bottom: 4px !important;
+  }
+
+  .contract-meta {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 12px !important;
+    font-size: 0.74rem !important;
+    color: #334155 !important;
+  }
+
+  .contract-divider {
+    margin: 8px 0 !important;
+    border: 0 !important;
+    border-top: 1px solid #cbd5e1 !important;
+  }
+
+  .contract-terms {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 5px !important;
+    margin-bottom: 10px !important;
+  }
+
+  .term-item {
+    display: flex !important;
+    align-items: flex-start !important;
+    gap: 8px !important;
+    padding: 6px 10px !important;
+    border: 1px solid #e2e8f0 !important;
+    background: #f8fafc !important;
+    border-radius: 6px !important;
+    font-size: 0.78rem !important;
+    line-height: 1.35 !important;
+    color: #1e293b !important;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+
+  .term-num {
+    font-size: 0.72rem !important;
+    font-weight: 800 !important;
+    background: #e2e8f0 !important;
+    color: #0f172a !important;
+    padding: 2px 6px !important;
+    border-radius: 4px !important;
+    white-space: nowrap !important;
+  }
+
+  .term-content strong {
+    color: #0f172a !important;
+  }
+
+  .signature-section {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 16px !important;
+    margin-top: 10px !important;
+    padding-top: 10px !important;
+    border-top: 2px dashed #94a3b8 !important;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+
+  .sig-box {
+    background: #f8fafc !important;
+    border: 1px solid #cbd5e1 !important;
+    padding: 8px !important;
+    border-radius: 6px !important;
+    text-align: center !important;
+  }
+
+  .sig-title {
+    font-size: 0.78rem !important;
+    font-weight: 700 !important;
+    color: #0f172a !important;
+    margin-bottom: 4px !important;
+  }
+
+  .sig-canvas-wrap {
+    height: 60px !important;
+    background: #ffffff !important;
+    border: 1px dashed #94a3b8 !important;
+    border-radius: 4px !important;
+    position: relative !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .akash-sig-img {
+    max-height: 48px !important;
+    max-width: 160px !important;
+  }
+
+  .sweety-sig-img {
+    max-height: 40px !important;
+    max-width: 160px !important;
+  }
+
+  .sig-stamp {
+    position: absolute !important;
+    top: 4px !important;
+    right: 4px !important;
+    font-size: 0.62rem !important;
+    padding: 1px 4px !important;
+    font-weight: 800 !important;
+    border-radius: 3px !important;
+  }
+
+  .sig-hint {
+    font-size: 0.68rem !important;
+    margin-top: 3px !important;
+    color: #64748b !important;
+  }
+}
+
+/* ==========================================================================
+   RESPONSIVE DESIGN
+   ========================================================================== */
+@media (max-width: 1200px) {
+  .nav-link {
+    padding: 6px 9px;
+    font-size: 0.8rem;
+    gap: 4px;
+  }
+  .status-pill {
+    padding: 5px 10px;
+    font-size: 0.74rem;
+  }
+}
+
+@media (max-width: 1080px) {
+  .status-pill {
+    display: none;
+  }
+  .header-container {
+    gap: 8px;
+  }
+  .nav-link {
+    padding: 6px 8px;
+    font-size: 0.78rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .main-nav {
+    display: none;
+  }
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+  .hero-heading {
+    font-size: 2.5rem;
+  }
+  .counter-grid {
+    grid-template-columns: 1fr;
+  }
+  .milestone-ribbon {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .chapter-grid, .chapter-grid.reverse {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  .signature-section {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 92%;
+  }
+  .header-container {
+    justify-content: center;
+    width: 92%;
+  }
+  .main-nav {
+    display: none;
+  }
+  .status-pill {
+    display: none;
+  }
+  .brand-box {
+    gap: 10px;
+    max-width: 100%;
+  }
+  .brand-badge-img {
+    width: 38px;
+    height: 38px;
+  }
+  .brand-title {
+    font-size: 1.05rem;
+  }
+  .brand-sub {
+    font-size: 0.74rem;
+  }
+  .section-padding {
+    padding: 55px 0;
+  }
+  .hero-section {
+    padding: 40px 0 30px;
+  }
+  .tag-badge {
+    font-size: 0.78rem;
+    padding: 5px 12px;
+  }
+  .hero-heading {
+    font-size: 2.05rem;
+  }
+  .hero-description {
+    font-size: 1rem;
+    margin-bottom: 24px;
+  }
+  .section-title {
+    font-size: 1.9rem;
+  }
+  .hero-metrics {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .metric-card {
+    padding: 12px 14px;
+  }
+  .counter-card {
+    padding: 20px 14px;
+  }
+  .timer-display {
+    padding: 12px 8px;
+  }
+  .time-num {
+    font-size: 1.65rem;
+  }
+  .time-unit {
+    font-size: 0.65rem;
+  }
+  .time-sep {
+    font-size: 1.3rem;
+  }
+  .chapter-grid {
+    padding: 22px 15px;
+    gap: 20px;
+  }
+  .hero-image-box {
+    height: 280px;
+  }
+  .chapter-img.chapter2-chat-img {
+    height: 320px;
+  }
+  .chapter-img.chapter5-forever-img {
+    height: 320px;
+  }
+  .contract-paper {
+    padding: 26px 16px;
+  }
+  .contract-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+  }
+  .contract-seal-img {
+    width: 72px;
+    height: 72px;
+  }
+  .contract-watermark {
+    font-size: 3.2rem;
+  }
+  .contract-meta {
+    justify-content: center;
+  }
+  .interactive-proposal-card {
+    padding: 32px 16px;
+  }
+  .proposal-main-title {
+    font-size: 1.9rem;
+  }
+  .proposal-sub {
+    font-size: 0.98rem;
+    margin-bottom: 24px;
+  }
+  .interactive-btn-arena {
+    gap: 16px;
+    min-height: 120px;
+  }
+  .btn-yes {
+    font-size: 1.18rem;
+    padding: 14px 32px;
+  }
+  .btn-no {
+    font-size: 1rem;
+    padding: 12px 24px;
+  }
+  .quiz-card {
+    padding: 20px 14px;
+  }
+  .terminal-shell {
+    margin: 0;
+  }
+  .terminal-body {
+    padding: 16px 12px;
+    font-size: 0.84rem;
+  }
+  .quick-control-dock {
+    bottom: 14px;
+    right: 12px;
+    gap: 8px;
+  }
+  .dock-btn {
+    padding: 7px 12px;
+    font-size: 0.8rem;
+    gap: 6px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 94%;
+  }
+  .header-container {
+    width: 94%;
+    justify-content: center;
+  }
+  .brand-box {
+    gap: 8px;
+    justify-content: center;
+  }
+  .brand-badge-img {
+    width: 34px;
+    height: 34px;
+  }
+  .brand-title {
+    font-size: 0.94rem;
+    line-height: 1.2;
+  }
+  .brand-sub {
+    font-size: 0.68rem;
+    gap: 3px;
+  }
+  .tag-badge {
+    font-size: 0.72rem;
+    padding: 5px 10px;
+    gap: 6px;
+    margin-bottom: 16px;
+  }
+  .hero-heading {
+    font-size: 1.62rem;
+    line-height: 1.25;
+    margin-bottom: 15px;
+  }
+  .hero-description {
+    font-size: 0.92rem;
+    line-height: 1.55;
+    margin-bottom: 20px;
+  }
+  .hero-cta-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .hero-cta-group .btn {
+    width: 100%;
+    padding: 12px 18px;
+    font-size: 0.9rem;
+    text-align: center;
+    justify-content: center;
+  }
+  .milestone-ribbon {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .ribbon-item {
+    padding: 14px 10px;
+  }
+  .ribbon-count {
+    font-size: 1.35rem;
+  }
+  .counter-card {
+    padding: 16px 10px;
+  }
+  .counter-header h3 {
+    font-size: 1rem;
+  }
+  .timer-display {
+    padding: 10px 4px;
+    margin-bottom: 12px;
+  }
+  .time-num {
+    font-size: 1.3rem;
+  }
+  .time-unit {
+    font-size: 0.58rem;
+    letter-spacing: 0.5px;
+    margin-top: 4px;
+  }
+  .time-sep {
+    font-size: 1.1rem;
+  }
+  .interactive-proposal-card {
+    padding: 24px 12px;
+    border-radius: var(--radius-lg);
+  }
+  .proposal-main-title {
+    font-size: 1.55rem;
+  }
+  .proposal-sub {
+    font-size: 0.9rem;
+  }
+  .interactive-btn-arena {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+    min-height: auto;
+  }
+  .btn-yes, .btn-no {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+  .btn-yes {
+    font-size: 1.1rem;
+    padding: 14px 20px;
+  }
+  .btn-no {
+    font-size: 0.92rem;
+    padding: 11px 16px;
+  }
+  .quick-control-dock {
+    bottom: 10px;
+    right: 8px;
+    gap: 6px;
+  }
+  .dock-label {
+    display: none;
+  }
+  .dock-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 0;
+    justify-content: center;
+    font-size: 1.05rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  }
+  .celebration-inner {
+    padding: 10px;
+  }
+  .celebration-title {
+    font-size: 1.95rem;
+  }
+  .celebration-sub {
+    font-size: 0.95rem;
+  }
+  .contract-paper {
+    padding: 20px 12px;
+  }
+  .contract-title-wrap h2 {
+    font-size: 1.3rem;
+  }
+  .term-content {
+    font-size: 0.88rem;
+  }
+  .sig-canvas-wrap {
+    height: 75px;
+  }
+  .akash-sig-img, .sweety-sig-img {
+    max-height: 50px;
+  }
+}
+
+/* ==========================================================================
+   ADVANCED ANIMATIONS & SCROLL REVEAL SYSTEM
+   ========================================================================== */
+
+/* Floating Levitation */
+@keyframes floatGentle {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-7px) rotate(1.2deg);
+  }
+}
+
+/* Aurora Ambient Breathing Glow (GPU-Accelerated transform & opacity only) */
+@keyframes auraGlow {
+  0% {
+    opacity: 0.32;
+    transform: scale(0.97);
+  }
+  50% {
+    opacity: 0.65;
+    transform: scale(1.03);
+  }
+  100% {
+    opacity: 0.32;
+    transform: scale(0.97);
+  }
+}
+
+/* Story Chapter Smooth Transition */
+@keyframes chapterFadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(12px) scale(0.99);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Dodging NO Button Wobble */
+@keyframes dodgeWobble {
+  0% { transform: scale(1) rotate(0deg); }
+  25% { transform: scale(1.08) rotate(-8deg); }
+  50% { transform: scale(0.95) rotate(6deg); }
+  75% { transform: scale(1.04) rotate(-3deg); }
+  100% { transform: scale(1) rotate(0deg); }
+}
+
+/* YES Button Urgent Love Pulse */
+@keyframes yesExcitedBeat {
+  0%, 100% {
+    transform: scale(var(--yes-scale, 1));
+    box-shadow: 0 8px 30px rgba(255, 42, 112, 0.5);
+  }
+  50% {
+    transform: scale(calc(var(--yes-scale, 1) * 1.07));
+    box-shadow: 0 14px 45px rgba(255, 42, 112, 0.85), 0 0 25px rgba(255, 42, 112, 0.6);
+  }
+}
+
+/* Modal Spring Pop */
+@keyframes modalPopSpring {
+  0% {
+    opacity: 0;
+    transform: scale(0.85) translateY(20px);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1.03) translateY(-3px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+/* Fullscreen Overlay Smooth Fade */
+@keyframes screenFadeIn {
+  from {
+    opacity: 0;
+    backdrop-filter: blur(0px);
+  }
+  to {
+    opacity: 1;
+    backdrop-filter: blur(18px);
+  }
+}
+
+/* Micro-Interaction Sparkle Puff (spawns when NO dodges) */
+.escape-sparkle-puff {
+  position: absolute;
+  pointer-events: none;
+  font-size: 1.3rem;
+  z-index: 100;
+  animation: floatFadeUp 0.45s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes floatFadeUp {
+  0% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(0.6) rotate(0deg);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -120%) scale(1.3) rotate(20deg);
+  }
+}
+
+/* ==========================================================================
+   SCROLL REVEAL STYLES (Fast & Snappy Entrance)
+   ========================================================================== */
+.reveal-item {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 0.32s cubic-bezier(0.16, 1, 0.3, 1), transform 0.32s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-item.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger delay children */
+.stagger-group > .reveal-item:nth-child(1) { transition-delay: 0.02s; }
+.stagger-group > .reveal-item:nth-child(2) { transition-delay: 0.05s; }
+.stagger-group > .reveal-item:nth-child(3) { transition-delay: 0.08s; }
+.stagger-group > .reveal-item:nth-child(4) { transition-delay: 0.11s; }
+.stagger-group > .reveal-item:nth-child(5) { transition-delay: 0.14s; }
+
+
+  </style>
+</head>
+<body>
+  <!-- Ambient Particle Canvas -->
+  <canvas id="particleCanvas"></canvas>
+
+  <!-- Floating Audio & Quick Tools Floating Dock -->
+  <div class="quick-control-dock">
+    <button id="heartRainBtn" class="dock-btn pulse-glow" title="Dher Saare Dil Barsao (Heart Animation Shower)">
+      <i class="fa-solid fa-heart-pulse"></i>
+      <span class="dock-label">Dil Barsao 💖</span>
+    </button>
+    <button id="musicToggleBtn" class="dock-btn" title="Romantic Lo-Fi Music Chalao">
+      <i class="fa-solid fa-music"></i>
+      <span class="dock-label">Lo-Fi Vibes</span>
+    </button>
+    <button id="themeToggleBtn" class="dock-btn" title="Glow Mode Badlo">
+      <i class="fa-solid fa-sparkles"></i>
+      <span class="dock-label">Neon Glow</span>
+    </button>
+    <button id="scrollToStoryBtn" class="dock-btn" title="Kahani Par Jao">
+      <i class="fa-solid fa-heart"></i>
+      <span class="dock-label">Our Story</span>
+    </button>
+  </div>
+
+  <!-- Header / Navigation Bar -->
+  <header class="site-header">
+    <div class="header-container">
+      <div class="brand-box">
+        <img src="badge.jpg" alt="Farzi Engineer Badge" class="brand-badge-img">
+        <div class="brand-text">
+          <span class="brand-title">Love of <span class="gradient-text">Farzi Engineer</span></span>
+          <span class="brand-sub">Akash <i class="fa-solid fa-heart heart-beat"></i> Sweety</span>
+        </div>
+      </div>
+
+      <nav class="main-nav">
+        <a href="#hero" class="nav-link active"><i class="fa-solid fa-house"></i> Home</a>
+        <a href="#storyline" class="nav-link"><i class="fa-solid fa-book-open"></i> Story</a>
+        <a href="#milestones" class="nav-link"><i class="fa-solid fa-clock-rotate-left"></i> Timeline</a>
+        <a href="#quizSection" class="nav-link"><i class="fa-solid fa-gamepad"></i> Quiz</a>
+        <a href="#terminalSection" class="nav-link"><i class="fa-solid fa-terminal"></i> Terminal</a>
+        <a href="#contractSection" class="nav-link"><i class="fa-solid fa-file-contract"></i> Agreement</a>
+        <a href="#foreverSection" class="nav-link nav-highlight"><i class="fa-solid fa-ring"></i> Forever</a>
+      </nav>
+
+      <div class="status-pill">
+        <span class="status-dot"></span>
+        <span>Commit: <strong>SWEETY_FOREVER</strong></span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="tag-badge">
+            <i class="fa-solid fa-code-branch"></i>
+            <span>Production Status: 100% In Love with Sweety</span>
+          </div>
+
+          <h1 class="hero-heading">
+            Jab ek <span class="highlight-code">Farzi Engineer</span> ko mila uska sabse pyara <span class="gradient-romantic">Hotfix</span>!
+          </h1>
+
+          <p class="hero-description">
+            Akash sochta tha ki life me sirf coding bugs aur Stack Overflow hi hain... tab aayi <strong>Sweety</strong>! 
+            <strong>11 June 2025</strong> ko hui pehli mulaqat, aur <strong>19 June 2025</strong> ko Sweety ne direct pull request submit karke Akash ki single life hamesha ke liye terminate kar di! 💍💖
+          </p>
+
+          <div class="hero-cta-group">
+            <button class="btn btn-primary" id="startStoryBtn">
+              <i class="fa-solid fa-book-heart"></i> Mulaqat Ki Puri Kahani Padho
+            </button>
+            <button class="btn btn-secondary" id="openQuizBtn">
+              <i class="fa-solid fa-fire"></i> Farzi Engineer Quiz Khelo
+            </button>
+          </div>
+
+          <!-- Quick Metrics Bar -->
+          <div class="hero-metrics">
+            <div class="metric-card">
+              <div class="metric-icon"><i class="fa-solid fa-calendar-star"></i></div>
+              <div class="metric-data">
+                <span class="metric-val">11 June 2025</span>
+                <span class="metric-title">Pehli Mulaqat (Meetup)</span>
+              </div>
+            </div>
+
+            <div class="metric-card highlight-metric">
+              <div class="metric-icon"><i class="fa-solid fa-ring"></i></div>
+              <div class="metric-data">
+                <span class="metric-val">19 June 2025</span>
+                <span class="metric-title">Sweety Ka Swag Proposal 💖</span>
+              </div>
+            </div>
+
+            <div class="metric-card">
+              <div class="metric-icon"><i class="fa-solid fa-infinity"></i></div>
+              <div class="metric-data">
+                <span class="metric-val">Infinite Loop</span>
+                <span class="metric-title">Validity of Romance</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-card-wrapper">
+            <div class="card-glow-bg"></div>
+            <div class="hero-card">
+              <div class="card-header-bar">
+                <div class="window-dots">
+                  <span class="dot red"></span>
+                  <span class="dot yellow"></span>
+                  <span class="dot green"></span>
+                </div>
+                <div class="window-title">akash_loves_sweety.jsx</div>
+                <div class="coffee-tag"><i class="fa-solid fa-mug-hot"></i> Coffee Mode</div>
+              </div>
+
+              <div class="hero-image-box">
+                <img src="hero.jpg" alt="Akash and Sweety ❤️ Love of Farzi Engineer" class="hero-img">
+                <div class="image-overlay-badge">
+                  <i class="fa-solid fa-heart"></i> Akash ❤️ Sweety Forever
+                </div>
+              </div>
+
+              <div class="code-snippet-box">
+                <pre><code><span class="code-keyword">const</span> <span class="code-var">relationship</span> = {
+  <span class="code-prop">engineer</span>: <span class="code-str">"Akash (Farzi par Dil Se Saccha)"</span>,
+  <span class="code-prop">queen</span>: <span class="code-str">"Sweety (The Ultimate Bug Fixer)"</span>,
+  <span class="code-prop">firstMeet</span>: <span class="code-str">"11-06-2025"</span>,
+  <span class="code-prop">proposalBySweety</span>: <span class="code-str">"19-06-2025 💍"</span>,
+  <span class="code-prop">status</span>: <span class="code-func">alwaysSmiling</span>(<span class="code-str">"Forever"</span>)
+};</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LIVE RELATIONSHIP COUNTER & MILESTONES -->
+    <section id="milestones" class="section-padding milestones-section">
+      <div class="container">
+        <div class="section-heading text-center">
+          <span class="section-sub"><i class="fa-solid fa-stopwatch"></i> Real-time Clock</span>
+          <h2 class="section-title">Akash & Sweety Ka <span class="gradient-text">Pyar Ka Meter</span></h2>
+          <p class="section-desc">11 June 2025 ki pehli nazar se lekar aaj tak, har ek second Akash ke dil me Sweety ka raaj hai!</p>
+        </div>
+
+        <!-- Live Clock Cards -->
+        <div class="counter-grid">
+          <div class="counter-card main-timer">
+            <div class="counter-header">
+              <i class="fa-solid fa-hand-holding-heart"></i>
+              <h3>Pehli Mulaqat (11 June 2025) Se Ab Tak:</h3>
+            </div>
+            <div class="timer-display" id="meetTimer">
+              <div class="time-block">
+                <span class="time-num" id="meetDays">0</span>
+                <span class="time-unit">Days</span>
+              </div>
+              <span class="time-sep">:</span>
+              <div class="time-block">
+                <span class="time-num" id="meetHours">0</span>
+                <span class="time-unit">Hours</span>
+              </div>
+              <span class="time-sep">:</span>
+              <div class="time-block">
+                <span class="time-num" id="meetMins">0</span>
+                <span class="time-unit">Minutes</span>
+              </div>
+              <span class="time-sep">:</span>
+              <div class="time-block">
+                <span class="time-num" id="meetSecs">0</span>
+                <span class="time-unit">Seconds</span>
+              </div>
+            </div>
+            <p class="timer-caption">11 June 2025 — Jab Akash ne Sweety ko dekha aur sara code bhool gaya!</p>
+          </div>
+
+          <div class="counter-card proposal-timer">
+            <div class="counter-header">
+              <i class="fa-solid fa-wand-magic-sparkles"></i>
+              <h3>Sweety Ke Proposal (19 June 2025) Se Ab Tak:</h3>
+            </div>
+            <div class="timer-display" id="propTimer">
+              <div class="time-block">
+                <span class="time-num" id="propDays">0</span>
+                <span class="time-unit">Days</span>
+              </div>
+              <span class="time-sep">:</span>
+              <div class="time-block">
+                <span class="time-num" id="propHours">0</span>
+                <span class="time-unit">Hours</span>
+              </div>
+              <span class="time-sep">:</span>
+              <div class="time-block">
+                <span class="time-num" id="propMins">0</span>
+                <span class="time-unit">Minutes</span>
+              </div>
+              <span class="time-sep">:</span>
+              <div class="time-block">
+                <span class="time-num" id="propSecs">0</span>
+                <span class="time-unit">Seconds</span>
+              </div>
+            </div>
+            <p class="timer-caption">19 June 2025 — Sweety ne bola: "Ab tu mera hai, no bugs allowed!" 💖</p>
+          </div>
+        </div>
+
+        <!-- Milestones Row -->
+        <div class="milestone-ribbon">
+          <div class="ribbon-item">
+            <span class="ribbon-icon">☕</span>
+            <span class="ribbon-count" id="coffeeCount">480+</span>
+            <span class="ribbon-label">Virtual & Cafe Coffees</span>
+          </div>
+          <div class="ribbon-item">
+            <span class="ribbon-icon">💬</span>
+            <span class="ribbon-count" id="lateNightCalls">2,400+</span>
+            <span class="ribbon-label">Hours on Late Night Calls</span>
+          </div>
+          <div class="ribbon-item">
+            <span class="ribbon-icon">😂</span>
+            <span class="ribbon-count" id="akashExcuses">999+</span>
+            <span class="ribbon-label">"Bas 2 min me code khatam" Bahane</span>
+          </div>
+          <div class="ribbon-item">
+            <span class="ribbon-icon">👑</span>
+            <span class="ribbon-count">100%</span>
+            <span class="ribbon-label">Sweety's Supreme Authority</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE STORIABLE SECTION -->
+    <section id="storyline" class="section-padding story-section">
+      <div class="container">
+        <div class="section-heading text-center">
+          <span class="section-sub"><i class="fa-solid fa-code-commit"></i> Git Commit History</span>
+          <h2 class="section-title">Kahani: <span class="gradient-romantic">Farzi Engineer Ki Sweety</span></h2>
+          <p class="section-desc">Git log check karo — Kaise do dilon ke beech merge conflict kabhi nahi hua!</p>
+        </div>
+
+        <!-- Story Navigator Tabs -->
+        <div class="story-nav-bar">
+          <button class="story-tab active" data-chapter="1">
+            <span class="tab-badge">01</span>
+            <span>11 June: Pehli Mulaqat</span>
+          </button>
+          <button class="story-tab" data-chapter="2">
+            <span class="tab-badge">02</span>
+            <span>19 June: Sweety's Proposal 💍</span>
+          </button>
+          <button class="story-tab" data-chapter="3">
+            <span class="tab-badge">03</span>
+            <span>21 June: ISKCON & Kalkaji 🌹</span>
+          </button>
+          <button class="story-tab" data-chapter="4">
+            <span class="tab-badge">04</span>
+            <span>Anand Vihar: Haathon Me Haath 🤝❤️</span>
+          </button>
+          <button class="story-tab" data-chapter="5">
+            <span class="tab-badge">05</span>
+            <span>Chapter 5: Love Forever 💖</span>
+          </button>
+        </div>
+
+        <!-- Story Presentation Box -->
+        <div class="story-viewport" id="storyViewport">
+          <!-- Chapter 1 -->
+          <article class="story-chapter active" id="chapter-1">
+            <div class="chapter-grid">
+              <div class="chapter-media">
+                <img src="chapter1_meetup.jpg" alt="11 June Meetup - Akash and Sweety" class="chapter-img chapter1-img">
+                <div class="chapter-date-tag"><i class="fa-solid fa-calendar-day"></i> 11 June 2025</div>
+              </div>
+              <div class="chapter-body">
+                <div class="commit-pill">commit 7a8f90: initial_meetup_spark</div>
+                <h3 class="chapter-title">Chapter 1: Jab Akash Ka System Pehli Baar Hang Hua!</h3>
+                <p class="chapter-text">
+                  Date thi <strong>11 June 2025</strong>. Akash apne purane dhang se glasses set karte hue, casual hoodie pehan kar pahuncha. Dimag me chal raha tha ki tech jargon bolke impress karega! 
+                </p>
+                <p class="chapter-text">
+                  Lekin jaise hi <strong>Sweety</strong> ne entry li, Akash ki sari coding theory gayab! Sweety ki cute smile, uska confident andaaz aur unki pehli coffee date ne Akash ke dil par permanent lock laga diya. Akash bas man hi man socha: <em>"Bhai, ye to Stack Overflow ke best answer se bhi 1000 guna zyada perfect hai!"</em>
+                </p>
+                <div class="chapter-fun-fact">
+                  <i class="fa-solid fa-lightbulb"></i>
+                  <span><strong>Farzi Engineer Secret:</strong> Us din Akash coffee ka taste notice karna hi bhool gaya tha, kyunki uska pura focus bas Sweety ki baaton par tha!</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Chapter 2 -->
+          <article class="story-chapter" id="chapter-2">
+            <div class="chapter-grid reverse">
+              <div class="chapter-media">
+                <img src="chapter2_chat.png" alt="19 June Proposal Chat - Sweety & Akash" class="chapter-img chapter2-chat-img">
+                <div class="chapter-date-tag highlight date-tag-right"><i class="fa-solid fa-ring"></i> 19 June 2025</div>
+              </div>
+              <div class="chapter-body">
+                <div class="commit-pill highlight">commit e4c219: sweety_pull_request_merged</div>
+                <h3 class="chapter-title">Chapter 2: The Boss Move — Sweety Ne Kiya Propose! 💖</h3>
+                <p class="chapter-text">
+                  Duniya bhar me log sochte hain ki ladka pehle propose karega. Par Akash tha <em>Farzi Engineer</em> — jo 5 saal tak 'planning' me nikal deta! Sweety ne socha: <strong>"Isse na ho payega, mujhe hi iski zindagi sort karni padegi!"</strong>
+                </p>
+                <p class="chapter-text">
+                  Aur fir aayi wo khoobsurat tareekh — <strong>19 June 2025</strong>! Sweety ne full swag aur pyare andaz me Akash ko propose kar diya. Akash ka reaction? Aankhein khuli ki khuli, dil ki dhadkan 200 BPM, aur chehre par wo wali smile jo aaj tak nahi ruki! Akash ne turant bola: <em>"Merge Request Accepted without any conflict!"</em>
+                </p>
+                <div class="chapter-fun-fact highlight">
+                  <i class="fa-solid fa-heart"></i>
+                  <span><strong>The Golden Truth:</strong> 19 June wo din hai jab Akash ko samajh aaya ki bhagwan ne uske liye duniya ki sabse loving aur courageous ladki banayi hai.</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Chapter 3 -->
+          <article class="story-chapter" id="chapter-3">
+            <div class="chapter-grid">
+              <div class="chapter-media">
+                <img src="chapter3_iskcon.jpg" alt="21 June ISKCON Temple and Kalkaji Delhi - Akash and Sweety with Red Roses" class="chapter-img chapter3-rose-img">
+                <div class="chapter-date-tag highlight"><i class="fa-solid fa-om"></i> 21 June 2025 • ISKCON & Kalkaji</div>
+              </div>
+              <div class="chapter-body">
+                <div class="commit-pill highlight">commit 8c4d21: temple_blessings_and_red_roses</div>
+                <h3 class="chapter-title">Chapter 3: 21 June — ISKCON Temple & Kalkaji Mandir, Delhi 🌹✨</h3>
+                <p class="chapter-text">
+                  Date thi <strong>21 June 2025</strong>! Apne rishte ko bhagwan ka aashirwad dilane ke liye Akash aur Sweety ne Delhi ke pavitra <strong>ISKCON Temple</strong> aur <strong>Maa Kalkaji Mandir</strong> me darshan kiye.
+                </p>
+                <p class="chapter-text">
+                  Haathon me laal gulab, aankhon me ek doosre ke liye beinteha izzat aur pyar, aur dil me hamesha sath nibhane ka sankalp! Mandir ke shaant mahol me Akash ne dil se shukriya ada kiya ki bhagwan ne uske saare errors ko theek karke uski zindagi me <strong>Sweety</strong> ko bhej diya.
+                </p>
+                <div class="chapter-fun-fact highlight">
+                  <i class="fa-solid fa-hands-praying"></i>
+                  <span><strong>Divine Blessing:</strong> ISKCON aur Maa Kalkaji ke darbar me maangi gayi ye dua dono ke dil ko hamesha jod kar rakhegi — Pyar, Vishwas aur Barkat!</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Chapter 4 -->
+          <article class="story-chapter" id="chapter-4">
+            <div class="chapter-grid reverse">
+              <div class="chapter-media">
+                <img src="chapter4_anand_vihar.jpg" alt="Anand Vihar Railway Station - Akash and Sweety holding hands with Mehendi" class="chapter-img chapter4-station-img">
+                <div class="chapter-date-tag highlight"><i class="fa-solid fa-train-subway"></i> Anand Vihar Railway Station</div>
+              </div>
+              <div class="chapter-body">
+                <div class="commit-pill highlight">commit a4b8c9: hand_in_hand_anand_vihar_railway_station</div>
+                <h3 class="chapter-title">Chapter 4: Anand Vihar Railway Station — Haathon Me Haath Aur Zindagi Bhar Ka Sath 🚉🤝💖</h3>
+                <p class="chapter-text">
+                  <strong>Anand Vihar Railway Station</strong> par jab Akash ne pehli baar itne pyar se Sweety ka haath thama, to aas-paas ka sara shor jaise gayab ho gaya. 
+                </p>
+                <p class="chapter-text">
+                  Sweety ke naazuk haathon me saji laal mehendi aur Akash ka uska haath itne pakke bharose ke sath pakadna — ye sirf ek mulaqat nahi thi, balki zindagi ke har naye safar me har mod par sath chalne ka khamosh wada tha. Akash ne man hi man socha: <em>"Meri poori duniya ab isi ek haath me hai!"</em>
+                </p>
+                <div class="chapter-fun-fact highlight">
+                  <i class="fa-solid fa-heart-circle-check"></i>
+                  <span><strong>The Unbreakable Bond:</strong> Railway tracks chahe kitni bhi lambi manzil tak jayein, par Anand Vihar par thama hua ye haath zindagi bhar sath nahi chhodega!</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Chapter 5 -->
+          <article class="story-chapter" id="chapter-5">
+            <div class="chapter-grid">
+              <div class="chapter-media">
+                <img src="chapter5_love_forever.jpg" alt="Akash and Sweety - Love Forever" class="chapter-img chapter5-forever-img">
+                <div class="chapter-date-tag highlight date-tag-right"><i class="fa-solid fa-infinity"></i> Love Forever 💖</div>
+              </div>
+              <div class="chapter-body">
+                <div class="commit-pill highlight">commit ffffff: infinite_loop_love_forever</div>
+                <h3 class="chapter-title">Chapter 5: The Infinite Loop — Love Forever 💖♾️</h3>
+                <p class="chapter-text">
+                  Ye kahani <strong>11 June 2025</strong> ko shuru hui thi, <strong>19 June</strong> ko Sweety ne official proposal diya, <strong>21 June</strong> ko ISKCON & Kalkaji me bhagwan ka aashirwad mila, aur Anand Vihar station par hamesha sath chalne ka wada hua!
+                </p>
+                <div class="code-terminal-snippet">
+                  <code>
+                    <span class="c-key">while</span> (<span class="c-val">akash.isBreathing</span>() === <span class="c-bool">true</span>) {<br>
+                    &nbsp;&nbsp;<span class="c-func">love</span>(Sweety);<br>
+                    &nbsp;&nbsp;<span class="c-func">protect</span>(Sweety);<br>
+                    &nbsp;&nbsp;<span class="c-func">makeSweetySmile</span>();<br>
+                    } <span class="c-comment">// No break statement allowed!</span>
+                  </code>
+                </div>
+                <p class="chapter-text">
+                  <strong>Akash & Sweety</strong> — Do dil, ek safar, aur ek aisi mohabbat jo har din aur gehri hoti jayegi. Farzi Engineer ka system chahe kitna bhi hang ho, par Sweety ke liye uska pyar hamesha 100% speed par daudega! 💑✨
+                </p>
+                <div class="chapter-fun-fact highlight">
+                  <i class="fa-solid fa-heart"></i>
+                  <span><strong>Forever Promise:</strong> "Zindagi me chahe kitne bhi bugs aayein, hum dono milkar har ek bug ko fix karenge aur hamesha muskurayenge!"</span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Story Controls -->
+        <div class="story-stepper-controls">
+          <button id="prevChapterBtn" class="btn btn-outline" disabled><i class="fa-solid fa-chevron-left"></i> Pichla Chapter</button>
+          <div class="chapter-progress-indicator">
+            <span id="currentChapterNum">1</span> / 5 Chapters
+          </div>
+          <button id="nextChapterBtn" class="btn btn-primary">Agla Chapter <i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- FARZI ENGINEER LOVE QUIZ -->
+    <section id="quizSection" class="section-padding quiz-section">
+      <div class="container">
+        <div class="section-heading text-center">
+          <span class="section-sub"><i class="fa-solid fa-gamepad"></i> Interactive Game</span>
+          <h2 class="section-title">The <span class="gradient-text">Farzi Engineer Love Quiz</span> 🕹️</h2>
+          <p class="section-desc">Dekhte hain aap Akash aur Sweety ke love story ke baare me kitna jaante ho! 6 mazedaar questions!</p>
+        </div>
+
+        <div class="quiz-container">
+          <!-- Quiz Progress Bar -->
+          <div class="quiz-top-bar">
+            <div class="quiz-progress-track">
+              <div class="quiz-progress-fill" id="quizProgressBar" style="width: 16%;"></div>
+            </div>
+            <div class="quiz-meta-info">
+              <span id="quizQuestionCounter">Question 1 of 6</span>
+              <span class="score-pill">Score: <strong id="currentScore">0</strong> pts</span>
+            </div>
+          </div>
+
+          <!-- Active Question Card -->
+          <div class="quiz-card" id="quizCard">
+            <div class="question-icon-badge" id="qIconBadge"><i class="fa-solid fa-code"></i></div>
+            <h3 class="quiz-question-title" id="quizQuestionText">Question Title Here</h3>
+            <p class="quiz-question-context" id="quizQuestionContext">Subtitle context</p>
+
+            <div class="quiz-options-grid" id="quizOptionsContainer">
+              <!-- Dynamically injected -->
+            </div>
+
+            <div class="quiz-feedback-box hidden" id="quizFeedbackBox">
+              <div class="feedback-icon" id="feedbackIcon"></div>
+              <div class="feedback-text" id="feedbackText">Explanation here</div>
+            </div>
+
+            <div class="quiz-action-bar">
+              <button id="quizNextBtn" class="btn btn-primary hidden">Next Question <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+          </div>
+
+          <!-- Quiz Completion Result (Hidden initially) -->
+          <div class="quiz-result-card hidden" id="quizResultCard">
+            <div class="confetti-cannon-icon">🎉</div>
+            <h3 class="result-title">Quiz Samapt! Akash & Sweety Approved!</h3>
+            <div class="result-score-circle">
+              <span class="result-points" id="finalPoints">6/6</span>
+              <span class="result-subtext">Perfect Match!</span>
+            </div>
+            <p class="result-commentary" id="resultCommentary">
+              Aapne toh Akash aur Sweety ke dil ke saare code crack kar liye! Sweety's pull request officially declared legend!
+            </p>
+            <div class="result-badge-awarded">
+              <i class="fa-solid fa-certificate"></i>
+              <span>Awarded: <strong>Sweety's Official Farzi Engineer Degree</strong></span>
+            </div>
+            <div class="result-btns">
+              <button class="btn btn-secondary" id="retakeQuizBtn"><i class="fa-solid fa-rotate-right"></i> Dobara Khelo</button>
+              <a href="#contractSection" class="btn btn-primary"><i class="fa-solid fa-file-signature"></i> Love Agreement Par Sign Karo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECRET LOVE TERMINAL SECTION -->
+    <section id="terminalSection" class="section-padding terminal-section">
+      <div class="container">
+        <div class="section-heading text-center">
+          <span class="section-sub"><i class="fa-solid fa-terminal"></i> Akash's CLI Console</span>
+          <h2 class="section-title">The <span class="gradient-romantic">Secret Love Terminal</span> 💻</h2>
+          <p class="section-desc">Farzi engineer ka secret bash terminal! Commands type karo ya niche quick buttons dabao:</p>
+        </div>
+
+        <div class="terminal-shell">
+          <div class="terminal-header">
+            <div class="terminal-buttons">
+              <span class="t-btn t-close"></span>
+              <span class="t-btn t-min"></span>
+              <span class="t-btn t-max"></span>
+            </div>
+            <div class="terminal-title">bash - akash@sweety-server: ~/heart/love_secrets</div>
+            <div class="terminal-status"><i class="fa-solid fa-wifi"></i> Connected to Sweety's Heart</div>
+          </div>
+
+          <div class="terminal-body" id="terminalOutput">
+            <div class="t-line info-line">Welcome to Akash & Sweety Love Terminal v2.025</div>
+            <div class="t-line info-line">Type <span class="cmd-highlight">'help'</span> to see all available commands.</div>
+            <div class="t-line info-line">Status: Sweety's Pull Request permanently merged on 19 June 2025.</div>
+            <div class="t-line prompt-line">
+              <span class="t-prompt">akash@sweety:~$</span>
+              <span class="t-static">status --relationship</span>
+            </div>
+            <div class="t-line output-line success">
+              ✨ 100% In Love! 0 Errors, 0 Warnings, 1 Sweety for Lifetime! ❤️
+            </div>
+          </div>
+
+          <!-- Quick Commands Pill Bar -->
+          <div class="quick-commands-bar">
+            <span class="quick-label">Try Commands:</span>
+            <button class="t-pill-btn" data-cmd="meetup">11_june_meetup</button>
+            <button class="t-pill-btn" data-cmd="proposal">19_june_proposal</button>
+            <button class="t-pill-btn" data-cmd="sweety">whois_sweety</button>
+            <button class="t-pill-btn" data-cmd="akash">whois_akash</button>
+            <button class="t-pill-btn" data-cmd="reasons">10_reasons_to_love</button>
+            <button class="t-pill-btn" data-cmd="apology">engineer_apology</button>
+            <button class="t-pill-btn" data-cmd="coffee">brew_coffee</button>
+            <button class="t-pill-btn" data-cmd="secret">secret_note</button>
+            <button class="t-pill-btn" data-cmd="clear">clear</button>
+          </div>
+
+          <form id="terminalForm" class="terminal-input-bar">
+            <span class="t-prompt">akash@sweety:~$</span>
+            <input type="text" id="terminalInput" autocomplete="off" placeholder="Type a command (try: 'meetup', 'proposal', 'sweety', 'help')..." autofocus>
+            <button type="submit" class="terminal-submit-btn"><i class="fa-solid fa-arrow-turn-down"></i></button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- OFFICIAL FARZI ENGINEER LOVE AGREEMENT / CONTRACT -->
+    <section id="contractSection" class="section-padding contract-section">
+      <div class="container">
+        <div class="section-heading text-center">
+          <span class="section-sub"><i class="fa-solid fa-stamp"></i> Legal Love Contract</span>
+          <h2 class="section-title">Farzi Engineer & Sweety <span class="gradient-text">Love Agreement</span> 📜</h2>
+          <p class="section-desc">Ye agreement Akash aur Sweety ke beech strictly enforceable hai!</p>
+        </div>
+
+        <div class="contract-paper" id="contractPaper">
+          <div class="contract-watermark">AKASH & SWEETY</div>
+          <div class="contract-header">
+            <div class="seal-box">
+              <img src="badge.jpg" alt="Love Seal" class="contract-seal-img">
+            </div>
+            <div class="contract-title-wrap">
+              <h2>OFFICIAL LOVE & LIFETIME PARTNERSHIP CONTRACT</h2>
+              <p>Registered Under Section 143: Unconditional Love & Lifetime Commitment Code</p>
+              <div class="contract-meta">
+                <span><strong>Party A (Farzi Engineer):</strong> Akash</span>
+                <span><strong>Party B (Queen of Heart):</strong> Sweety</span>
+                <span><strong>Effective From:</strong> 11 June 2025 (Meet) & 19 June 2025 (Proposal)</span>
+              </div>
+            </div>
+          </div>
+
+          <hr class="contract-divider">
+
+          <div class="contract-terms">
+            <div class="term-item">
+              <span class="term-num">Clause 1.0</span>
+              <div class="term-content">
+                <strong>Sweety's Supreme Admin Privilege:</strong> Sweety ke paas Akash ke dil, waqt aur preferences par 100% Superuser (Root) rights honge. Akash kabhi bhi permission denied error nahi de sakta.
+              </div>
+            </div>
+
+            <div class="term-item">
+              <span class="term-num">Clause 2.0</span>
+              <div class="term-content">
+                <strong>No 'It Works On My Machine' Excuse:</strong> Jab Sweety naraz ho, Akash kabhi logic nahi lagayega. Akash ko bina argument kiye hugs, chocolates aur <em>"Meri hi galti thi baby"</em> bolna compulsory hoga.
+              </div>
+            </div>
+
+            <div class="term-item">
+              <span class="term-num">Clause 3.0</span>
+              <div class="term-content">
+                <strong>The 2-Minute Bug Fix Myth:</strong> Akash 'Bas 2 minute me call karta hu' bolkar gayab nahi hoga. Max allowed delay is 5 minutes, warna penalty me extra cute voice me manana padega.
+              </div>
+            </div>
+
+            <div class="term-item">
+              <span class="term-num">Clause 4.0</span>
+              <div class="term-content">
+                <strong>Historic Dates Protection:</strong> <strong>11 June 2025</strong> (Pehli Mulaqat) aur <strong>19 June 2025</strong> (Sweety's Proposal Day) har saal National Love Festival ki tarah celebrate kiye jayenge with gifts and cake.
+              </div>
+            </div>
+
+            <div class="term-item">
+              <span class="term-num">Clause 5.0</span>
+              <div class="term-content">
+                <strong>Lifetime Warranty:</strong> Is relationship ka koi expiry date ya return policy nahi hai. Ye subscription forever free aur forever active rahega!
+              </div>
+            </div>
+          </div>
+
+          <!-- Signature Pad Section -->
+          <div class="signature-section">
+            <div class="sig-box">
+              <div class="sig-title">Akash (The Farzi Engineer)</div>
+              <div class="sig-canvas-wrap">
+                <img src="akash_signature.png" alt="Akash kr Signature" class="akash-sig-img" id="akashSigImg">
+                <div class="sig-stamp">AKASH SIGNED ✓</div>
+              </div>
+              <span class="sig-hint">Auto-signed with Dil Ka Sukoon</span>
+            </div>
+
+            <div class="sig-box">
+              <div class="sig-title">Sweety (The Boss Queen)</div>
+              <div class="sig-canvas-wrap">
+                <img src="sweety_signature.png" alt="Sweety Srivastav Signature" class="sweety-sig-img" id="sweetySigImg">
+                <div class="sig-stamp sig-stamp-sweety">SWEETY SIGNED ✓</div>
+              </div>
+              <span class="sig-hint">Signed with Haq & Dil Ka Sukoon 💖</span>
+            </div>
+          </div>
+
+          <div class="contract-footer">
+            <button class="btn btn-primary" id="downloadAgreementBtn">
+              <i class="fa-solid fa-print"></i> Agreement Print / Save Karo
+            </button>
+            <button class="btn btn-secondary" id="copyShareBtn">
+              <i class="fa-solid fa-heart"></i> Copy Love Pledge For Sweety
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECRET LOVE CAPSULE & LETTER -->
+    <section class="section-padding capsule-section">
+      <div class="container text-center">
+        <div class="capsule-box">
+          <div class="capsule-icon-wrap">
+            <i class="fa-solid fa-envelope-heart capsule-icon"></i>
+          </div>
+          <h2 class="capsule-title">Akash Ka Dil Se Khat: <span class="gradient-romantic">Dear Sweety</span></h2>
+          <p class="capsule-intro">Ek aisi chitthi jo kisi code editor me nahi, Akash ke dil me likhi gayi thi...</p>
+          <button class="btn btn-primary btn-lg pulse-glow" id="openLetterBtn">
+            <i class="fa-solid fa-envelope-open-text"></i> Khat Kholo (Click To Open)
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- THE BIG QUESTION: WILL YOU BE MY FOREVER? -->
+    <section id="foreverSection" class="section-padding proposal-interactive-section">
+      <div class="container text-center">
+        <div class="interactive-proposal-card">
+          <div class="card-sparkles">✨ 💖 ✨</div>
+          <h2 class="proposal-main-title">
+            Sweety, Will You Stay In Akash's Heart <span class="gradient-romantic">Forever?</span>
+          </h2>
+          <p class="proposal-sub">
+            19 June 2025 ko tumne propose kiya tha... aaj Akash ka sawaal hai: Kya tum is Farzi Engineer ki zindagi me hamesha aise hi muskurati rahogi?
+          </p>
+
+          <div class="interactive-btn-arena" id="btnArena">
+            <button class="btn btn-yes" id="yesLoveBtn">
+              <i class="fa-solid fa-heart"></i> YES, FOREVER! ❤️
+            </button>
+            <button class="btn btn-no" id="noLoveBtn">
+              NO 😜
+            </button>
+          </div>
+          <p class="runaway-hint" id="runawayHint">(Try clicking "NO" if you dare! 😉)</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- SECRET LOVE LETTER MODAL -->
+  <div class="modal-overlay hidden" id="letterModal">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="closeLetterBtn">&times;</button>
+      <div class="letter-paper">
+        <div class="letter-stamp">
+          <img src="badge.jpg" alt="Stamp">
+        </div>
+        <div class="letter-salutation">Meri Pyari Sweety, ❤️</div>
+        <div class="letter-body-text">
+          <p>
+            Sach kahun toh <strong>11 June 2025</strong> se pehle meri life bilkul ek boring terminal window jaisi thi — wahi daily routine, wahi code, wahi stress. Par jab tum aayi, lagta hai meri poori duniya me color aa gaya.
+          </p>
+          <p>
+            Aur <strong>19 June 2025</strong> ko jab tumne mujhe propose kiya... us pal meri rooh tak khush ho gayi thi! Mujhe vishwas hi nahi ho raha tha ki itni pyari, itni smart aur itni caring ladki mere sath rehna chahti hai.
+          </p>
+          <p>
+            Main chahe kitna bhi 'Farzi Engineer' ban jau, par tumhare liye mera pyar 100% genuine hai. Main promise karta hu ki tumhari smile kabhi khone nahi dunga, tumhare har mood ko sambhalunga, aur jab bhi tum thak jaogi, tumhara sabse mazboot sahara banunga.
+          </p>
+          <p class="letter-poetry">
+            <em>"Tum mil gayi toh zindagani sawar gayi,<br>
+            Har ek kami tumhari nazar se utar gayi...<br>
+            Ab kya maange hum khuda se koi dua,<br>
+            Jab meri har dua tum par aakar thehar gayi!"</em>
+          </p>
+          <div class="letter-sign-off">
+            <span>Hamesha sirf tumhara,</span>
+            <strong class="font-handwriting">Akash (Tumhara Farzi Engineer)</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CELEBRATION OVERLAY (FOR YES CLICK) -->
+  <div class="celebration-screen hidden" id="celebrationScreen">
+    <div class="celebration-inner text-center">
+      <div class="ring-fireworks">💍 ✨ 🎉 💖</div>
+      <h1 class="celebration-title">YAHOOO! SWEETY SAID YES!</h1>
+      <p class="celebration-sub">
+        Akash's world is now officially the happiest place on planet Earth! Forever & Always!
+      </p>
+      <div class="celebration-img-wrap">
+        <img src="proposal.jpg" alt="Akash aur Sweety - Forever in Love" class="celebration-img">
+      </div>
+      <button class="btn btn-primary btn-lg" id="closeCelebrationBtn">
+        <i class="fa-solid fa-heart"></i> Love You Sweety!
+      </button>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-logo">
+        <img src="badge.jpg" alt="Badge" class="footer-badge">
+        <span>Akash & Sweety — Love of Farzi Engineer</span>
+      </div>
+      <p class="footer-text">
+        Coded with ❤️ & Infinite Romance | First Met: <strong>11 June 2025</strong> | Sweety Proposed: <strong>19 June 2025</strong>
+      </p>
+      <div class="footer-credits">
+        <span>&copy; 2025-Forever. All rights reserved by Sweety's Heart.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+<script>
+/**
+ * Love of Farzi Engineer: Akash ❤️ Sweety
+ * Interactive Web Application Logic
+ */
+
+document.addEventListener('DOMContentLoaded', () => {
+  initParticleCanvas();
+  initLiveCounters();
+  initStoryline();
+  initQuiz();
+  initTerminal();
+  initSignaturePads();
+  initAgreementActions();
+  initLoveCapsuleModal();
+  initProposalArena();
+  initAudioSynthesizer();
+  initScrollReveal();
+});
+
+/* ==========================================================================
+   1. PARTICLE CANVAS (Ultra-Smooth 60 FPS Romantic Floating Wonderland)
+   ========================================================================== */
+function initParticleCanvas() {
+  const canvas = document.getElementById('particleCanvas');
+  if (!canvas) return;
+  const ctx = canvas.getContext('2d', { alpha: true });
+
+  let width = window.innerWidth;
+  let height = window.innerHeight;
+  let dpr = Math.min(window.devicePixelRatio || 1, 1.5);
+
+  function resizeCanvas() {
+    width = window.innerWidth;
+    height = window.innerHeight;
+    dpr = Math.min(window.devicePixelRatio || 1, 1.5);
+    canvas.width = Math.round(width * dpr);
+    canvas.height = Math.round(height * dpr);
+    canvas.style.width = `${width}px`;
+    canvas.style.height = `${height}px`;
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  }
+
+  resizeCanvas();
+  window.addEventListener('resize', resizeCanvas);
+
+  const heartEmojis = ['❤️', '💖', '💕', '💗', '💓', '💘', '💝', '✨', '🌹'];
+  const romanticColors = [
+    '#ff1744',
+    '#ff2a70',
+    '#f43f5e',
+    '#ec4899',
+    '#fb7185',
+    '#a855f7',
+    '#fda4af'
+  ];
+
+  // Helper to trace clean heart
+  function traceHeart(c, size) {
+    const s = size * 0.5;
+    c.beginPath();
+    c.moveTo(0, -s * 0.35);
+    c.bezierCurveTo(-s * 0.6, -s * 1.15, -s * 1.35, -s * 0.45, -s * 1.35, s * 0.15);
+    c.bezierCurveTo(-s * 1.35, s * 0.75, -s * 0.3, s * 1.25, 0, s * 1.55);
+    c.bezierCurveTo(s * 0.3, s * 1.25, s * 1.35, s * 0.75, s * 1.35, s * 0.15);
+    c.bezierCurveTo(s * 1.35, -s * 0.45, s * 0.6, -s * 1.15, 0, -s * 0.35);
+    c.closePath();
+  }
+
+  // PRE-RENDER SPRITES (Zero CPU allocations during 60 FPS animation loop)
+  const SPRITE_SIZE = 64;
+  const vectorSprites = {};
+  romanticColors.forEach(color => {
+    const sCanvas = document.createElement('canvas');
+    sCanvas.width = SPRITE_SIZE;
+    sCanvas.height = SPRITE_SIZE;
+    const sCtx = sCanvas.getContext('2d');
+
+    // Soft romantic radial glow
+    const grad = sCtx.createRadialGradient(SPRITE_SIZE / 2, SPRITE_SIZE * 0.42, 2, SPRITE_SIZE / 2, SPRITE_SIZE * 0.42, SPRITE_SIZE * 0.46);
+    grad.addColorStop(0, color);
+    grad.addColorStop(1, 'transparent');
+    sCtx.fillStyle = grad;
+    sCtx.beginPath();
+    sCtx.arc(SPRITE_SIZE / 2, SPRITE_SIZE * 0.42, SPRITE_SIZE * 0.46, 0, Math.PI * 2);
+    sCtx.fill();
+
+    // Sharp vector heart core
+    sCtx.save();
+    sCtx.translate(SPRITE_SIZE / 2, SPRITE_SIZE * 0.38);
+    traceHeart(sCtx, SPRITE_SIZE * 0.42);
+    sCtx.fillStyle = color;
+    sCtx.fill();
+    sCtx.restore();
+
+    vectorSprites[color] = sCanvas;
+  });
+
+  const emojiSprites = {};
+  heartEmojis.forEach(symbol => {
+    const sCanvas = document.createElement('canvas');
+    sCanvas.width = SPRITE_SIZE;
+    sCanvas.height = SPRITE_SIZE;
+    const sCtx = sCanvas.getContext('2d');
+
+    sCtx.font = `${Math.round(SPRITE_SIZE * 0.52)}px "Segoe UI Emoji", "Apple Color Emoji", "Noto Color Emoji", sans-serif`;
+    sCtx.textAlign = 'center';
+    sCtx.textBaseline = 'middle';
+    sCtx.fillText(symbol, SPRITE_SIZE / 2, SPRITE_SIZE / 2 + 2);
+
+    emojiSprites[symbol] = sCanvas;
+  });
+
+  const persistentHearts = [];
+  const burstHearts = [];
+  const isMobile = window.innerWidth < 768;
+  const targetCount = isMobile ? 18 : 28; // Clean, high FPS count
+
+  function createHeart(startY = null) {
+    const isEmoji = Math.random() < 0.42;
+    const size = Math.random() * (isMobile ? 18 : 26) + (isEmoji ? 16 : 14);
+    const color = romanticColors[Math.floor(Math.random() * romanticColors.length)];
+    const depth = Math.random();
+
+    return {
+      x: Math.random() * width,
+      y: startY !== null ? startY : Math.random() * height,
+      size: size * (0.8 + depth * 0.4),
+      baseScale: 1,
+      // Fast, brisk, energetic upward floating speed
+      speedY: (2.2 + depth * 2.8) * (isMobile ? 1.0 : 1.25),
+      swayAmount: Math.random() * 1.5 + 0.6,
+      swaySpeed: Math.random() * 0.05 + 0.03,
+      swayPhase: Math.random() * Math.PI * 2,
+      pulseSpeed: Math.random() * 0.09 + 0.05,
+      pulsePhase: Math.random() * Math.PI * 2,
+      rotation: (Math.random() - 0.5) * 0.4,
+      rotSpeed: (Math.random() - 0.5) * 0.015,
+      opacity: (Math.random() * 0.35 + 0.4) * (0.6 + depth * 0.4),
+      isEmoji: isEmoji,
+      symbol: isEmoji ? heartEmojis[Math.floor(Math.random() * heartEmojis.length)] : null,
+      color: color
+    };
+  }
+
+  for (let i = 0; i < targetCount; i++) {
+    persistentHearts.push(createHeart());
+  }
+
+  // Interactive Burst (Pointer Click / Tap)
+  function spawnHeartBurst(originX, originY, count = 12) {
+    for (let i = 0; i < count; i++) {
+      const angle = (Math.PI * 2 * i) / count + (Math.random() - 0.5) * 0.5;
+      const speed = Math.random() * 9.0 + 4.5;
+      const isEmoji = Math.random() < 0.6;
+      const color = romanticColors[Math.floor(Math.random() * romanticColors.length)];
+      burstHearts.push({
+        x: originX,
+        y: originY,
+        vx: Math.cos(angle) * speed,
+        vy: Math.sin(angle) * speed - (Math.random() * 4.0 + 2.0),
+        size: Math.random() * 16 + 12,
+        rotation: (Math.random() - 0.5) * 0.6,
+        rotSpeed: (Math.random() - 0.5) * 0.15,
+        alpha: 1.0,
+        decay: Math.random() * 0.032 + 0.024, // Fast clean fade
+        isEmoji: isEmoji,
+        symbol: isEmoji ? heartEmojis[Math.floor(Math.random() * heartEmojis.length)] : null,
+        color: color
+      });
+    }
+  }
+
+  // Snappy Fast Romantic Shower ("Dil Barsao")
+  function showerManyHearts(count = 30) {
+    const burstCount = isMobile ? Math.min(count, 20) : count;
+    for (let i = 0; i < burstCount; i++) {
+      setTimeout(() => {
+        const isEmoji = Math.random() < 0.65;
+        const color = romanticColors[Math.floor(Math.random() * romanticColors.length)];
+        burstHearts.push({
+          x: Math.random() * width,
+          y: -25,
+          vx: (Math.random() - 0.5) * 2.5,
+          vy: Math.random() * 5.5 + 4.0, // Brisk downward speed
+          size: Math.random() * 20 + 14,
+          rotation: (Math.random() - 0.5) * 0.5,
+          rotSpeed: (Math.random() - 0.5) * 0.1,
+          alpha: 1.0,
+          decay: Math.random() * 0.022 + 0.016, // Snappy fade
+          isEmoji: isEmoji,
+          symbol: isEmoji ? heartEmojis[Math.floor(Math.random() * heartEmojis.length)] : null,
+          color: color
+        });
+      }, i * 14);
+    }
+  }
+
+  window.spawnHeartBurst = spawnHeartBurst;
+  window.showerManyHearts = showerManyHearts;
+
+  // Pointer Down Burst
+  window.addEventListener('pointerdown', (e) => {
+    const targetTag = e.target.tagName ? e.target.tagName.toLowerCase() : '';
+    if (targetTag === 'input' || targetTag === 'textarea' || targetTag === 'button' || targetTag === 'a') return;
+    spawnHeartBurst(e.clientX, e.clientY, isMobile ? 8 : 12);
+  });
+
+  // Dock Button: "Dil Barsao"
+  const heartRainBtn = document.getElementById('heartRainBtn');
+  if (heartRainBtn) {
+    heartRainBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      showerManyHearts(32);
+      showToast("Dher Saare Pyar Ke Dil Baras Rahe Hain! 💖✨");
+      if (typeof playSoundEffect === 'function') {
+        playSoundEffect('success');
+      }
+    });
+  }
+
+  // High-Speed Butter-Smooth Render Loop
+  function render() {
+    ctx.clearRect(0, 0, width, height);
+
+    // 1. Persistent Floating Hearts
+    for (let p of persistentHearts) {
+      p.y -= p.speedY;
+      p.swayPhase += p.swaySpeed;
+      p.x += Math.sin(p.swayPhase) * p.swayAmount;
+      p.pulsePhase += p.pulseSpeed;
+      p.rotation += p.rotSpeed;
+
+      // Recycle to bottom
+      if (p.y < -50) {
+        p.y = height + Math.random() * 30 + 10;
+        p.x = Math.random() * width;
+        p.speedY = (2.2 + Math.random() * 2.8) * (isMobile ? 1.0 : 1.25);
+      }
+
+      const drawSize = p.size * (1 + Math.sin(p.pulsePhase) * 0.12);
+      const sprite = p.isEmoji ? emojiSprites[p.symbol] : vectorSprites[p.color];
+
+      if (sprite) {
+        ctx.save();
+        ctx.translate(p.x, p.y);
+        if (p.rotation) ctx.rotate(p.rotation);
+        ctx.globalAlpha = p.opacity;
+        ctx.drawImage(sprite, -drawSize / 2, -drawSize / 2, drawSize, drawSize);
+        ctx.restore();
+      }
+    }
+
+    // 2. Dynamic Burst / Shower Hearts
+    for (let i = burstHearts.length - 1; i >= 0; i--) {
+      const b = burstHearts[i];
+      b.x += b.vx;
+      b.y += b.vy;
+      b.vx *= 0.98;
+      b.vy += 0.16;
+      b.alpha -= b.decay;
+      b.rotation += b.rotSpeed;
+
+      if (b.alpha <= 0 || b.y > height + 50) {
+        burstHearts.splice(i, 1);
+        continue;
+      }
+
+      const sprite = b.isEmoji ? emojiSprites[b.symbol] : vectorSprites[b.color];
+      if (sprite) {
+        ctx.save();
+        ctx.translate(b.x, b.y);
+        if (b.rotation) ctx.rotate(b.rotation);
+        ctx.globalAlpha = Math.max(0, b.alpha);
+        ctx.drawImage(sprite, -b.size / 2, -b.size / 2, b.size, b.size);
+        ctx.restore();
+      }
+    }
+
+    requestAnimationFrame(render);
+  }
+
+  render();
+}
+
+/* ==========================================================================
+   2. LIVE RELATIONSHIP CLOCK / MILESTONES
+   - First Meetup: 11 June 2025
+   - Sweety's Proposal: 19 June 2025
+   ========================================================================== */
+function initLiveCounters() {
+  const meetDate = new Date('2025-06-11T00:00:00');
+  const propDate = new Date('2025-06-19T00:00:00');
+
+  function updateTimers() {
+    const now = new Date();
+
+    // Meetup Timer
+    const meetDiff = now - meetDate;
+    if (meetDiff > 0) {
+      const days = Math.floor(meetDiff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((meetDiff / (1000 * 60 * 60)) % 24);
+      const mins = Math.floor((meetDiff / (1000 * 60)) % 60);
+      const secs = Math.floor((meetDiff / 1000) % 60);
+
+      document.getElementById('meetDays').textContent = days;
+      document.getElementById('meetHours').textContent = String(hours).padStart(2, '0');
+      document.getElementById('meetMins').textContent = String(mins).padStart(2, '0');
+      document.getElementById('meetSecs').textContent = String(secs).padStart(2, '0');
+    }
+
+    // Proposal Timer
+    const propDiff = now - propDate;
+    if (propDiff > 0) {
+      const pDays = Math.floor(propDiff / (1000 * 60 * 60 * 24));
+      const pHours = Math.floor((propDiff / (1000 * 60)) % 24);
+      const pMins = Math.floor((propDiff / (1000 * 60)) % 60);
+      const pSecs = Math.floor((propDiff / 1000) % 60);
+
+      document.getElementById('propDays').textContent = pDays;
+      document.getElementById('propHours').textContent = String(pHours).padStart(2, '0');
+      document.getElementById('propMins').textContent = String(pMins).padStart(2, '0');
+      document.getElementById('propSecs').textContent = String(pSecs).padStart(2, '0');
+    }
+  }
+
+  updateTimers();
+  setInterval(updateTimers, 1000);
+}
+
+/* ==========================================================================
+   3. STORIABLE (Timeline Chapters Navigation)
+   ========================================================================== */
+function initStoryline() {
+  const tabs = document.querySelectorAll('.story-tab');
+  const chapters = document.querySelectorAll('.story-chapter');
+  const prevBtn = document.getElementById('prevChapterBtn');
+  const nextBtn = document.getElementById('nextChapterBtn');
+  const counterSpan = document.getElementById('currentChapterNum');
+  const totalChapters = 5;
+  let activeIndex = 1;
+
+  function setChapter(index) {
+    if (index < 1 || index > totalChapters) return;
+    activeIndex = index;
+
+    tabs.forEach(tab => {
+      const tabChap = parseInt(tab.getAttribute('data-chapter'), 10);
+      tab.classList.toggle('active', tabChap === activeIndex);
+    });
+
+    chapters.forEach((chap, idx) => {
+      chap.classList.toggle('active', idx + 1 === activeIndex);
+    });
+
+    counterSpan.textContent = activeIndex;
+    prevBtn.disabled = activeIndex === 1;
+    nextBtn.disabled = activeIndex === totalChapters;
+
+    playSoundEffect('pop');
+  }
+
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      const chap = parseInt(tab.getAttribute('data-chapter'), 10);
+      setChapter(chap);
+    });
+  });
+
+  prevBtn.addEventListener('click', () => setChapter(activeIndex - 1));
+  nextBtn.addEventListener('click', () => setChapter(activeIndex + 1));
+
+  // Hero section buttons
+  const startStoryBtn = document.getElementById('startStoryBtn');
+  if (startStoryBtn) {
+    startStoryBtn.addEventListener('click', () => {
+      document.getElementById('storyline').scrollIntoView({ behavior: 'smooth' });
+      setChapter(1);
+    });
+  }
+
+  const openQuizBtn = document.getElementById('openQuizBtn');
+  if (openQuizBtn) {
+    openQuizBtn.addEventListener('click', () => {
+      document.getElementById('quizSection').scrollIntoView({ behavior: 'smooth' });
+    });
+  }
+
+  const scrollToStoryBtn = document.getElementById('scrollToStoryBtn');
+  if (scrollToStoryBtn) {
+    scrollToStoryBtn.addEventListener('click', () => {
+      document.getElementById('storyline').scrollIntoView({ behavior: 'smooth' });
+    });
+  }
+}
+
+/* ==========================================================================
+   4. FARZI ENGINEER LOVE QUIZ
+   ========================================================================== */
+const QUIZ_QUESTIONS = [
+  {
+    title: "11 June 2025 ko jab Akash aur Sweety pehli baar mile, tab Akash ki condition kya thi?",
+    context: "Pehli mulaqat ka historical recap!",
+    options: [
+      { text: "Akash full chill tha, code discuss kar raha tha", correct: false },
+      { text: "Akash ka heart rate 200 BPM tha, nervous glasses set kar raha tha aur full fida ho gaya!", correct: true },
+      { text: "Akash coffee peena bhool gaya tha aur so gaya tha", correct: false },
+      { text: "Dono ne coding interview liya ek doosre ka", correct: false }
+    ],
+    explanation: "Sahi jawab! Akash ne Sweety ko dekhte hi apne dimaag ke saare tech words bhula diye aur bas Sweety ki smile dekhta reh gaya!"
+  },
+  {
+    title: "19 June 2025 ko historic proposal kisne kiya?",
+    context: "The legendary pull request!",
+    options: [
+      { text: "Akash ne 10-page ka PowerPoint presentation de kar", correct: false },
+      { text: "Kisi third party friend ne match karwaya", correct: false },
+      { text: "Boss Lady Sweety ne direct swag se propose karke Akash ki single life terminate kar di! 💍", correct: true },
+      { text: "ChatGPT ne proposal email bheja", correct: false }
+    ],
+    explanation: "Bilkul sahi! Akash toh sochte sochte saal nikaal deta, isliye Sweety ne 19 June ko boss ban ke direct propose kiya aur Akash ne instantly accept kar liya!"
+  },
+  {
+    title: "Akash ka favorite notification sound kya hai?",
+    context: "Engineering life vs Dil ki baat!",
+    options: [
+      { text: "'Salary Credited to Account'", correct: false },
+      { text: "'GitHub: Build Passed Successfully'", correct: false },
+      { text: "Sweety ka WhatsApp message ya incoming phone call! 🔔❤️", correct: true },
+      { text: "Zomato delivery partner arrived", correct: false }
+    ],
+    explanation: "Aur kya! Code build pass hone se bhi 1000 guna zyada dopamine Sweety ke 'Hi Baby' message se milta hai!"
+  },
+  {
+    title: "Agar Akash boley 'Baby bas 2 minute me call karta hu', toh reality kya hoti hai?",
+    context: "Classic Farzi Engineer excuse!",
+    options: [
+      { text: "Sach me exactly 2 minute", correct: false },
+      { text: "Minimum 45 minute + Sweety ka warning message! 😤", correct: true },
+      { text: "1 microsecond", correct: false },
+      { text: "Vo laptop par hi so gaya", correct: false }
+    ],
+    explanation: "Haha 100% correct! Farzi engineer ka 2 minute hamesha 45 minute hota hai, par Sweety ke gussa hote hi Akash sorry bolke haazir ho jata hai!"
+  },
+  {
+    title: "Sweety ke bina Akash ka server status kya hota hai?",
+    context: "System Health Check!",
+    options: [
+      { text: "Error 404: Happiness Not Found", correct: false },
+      { text: "Error 500: Internal Heart Crash", correct: false },
+      { text: "Error 403: Life Forbidden Without Sweety", correct: false },
+      { text: "All of the above! (Pura system down ho jata hai!)", correct: true }
+    ],
+    explanation: "Spot on! Sweety hi Akash ke server ki main cooling fan aur power supply hai!"
+  },
+  {
+    title: "Is relationship ka permanent license kis authority ne issue kiya hai?",
+    context: "Final verification question!",
+    options: [
+      { text: "Sweety's Heart Authority (Lifetime validity, Non-transferable, Non-refundable!) 💖", correct: true },
+      { text: "Stack Overflow Foundation", correct: false },
+      { text: "Department of Farzi Engineers", correct: false },
+      { text: "Nobody knows", correct: false }
+    ],
+    explanation: "Mubarak ho! Sweety ke dil ne Akash ko permanent lifetime license allot kar diya hai!"
+  }
+];
+
+function initQuiz() {
+  let currentIdx = 0;
+  let score = 0;
+  let answered = false;
+
+  const card = document.getElementById('quizCard');
+  const resultCard = document.getElementById('quizResultCard');
+  const titleEl = document.getElementById('quizQuestionText');
+  const contextEl = document.getElementById('quizQuestionContext');
+  const optionsContainer = document.getElementById('quizOptionsContainer');
+  const feedbackBox = document.getElementById('quizFeedbackBox');
+  const feedbackIcon = document.getElementById('feedbackIcon');
+  const feedbackText = document.getElementById('feedbackText');
+  const nextBtn = document.getElementById('quizNextBtn');
+  const counterText = document.getElementById('quizQuestionCounter');
+  const currentScoreEl = document.getElementById('currentScore');
+  const progressBar = document.getElementById('quizProgressBar');
+  const retakeBtn = document.getElementById('retakeQuizBtn');
+
+  function renderQuestion() {
+    answered = false;
+    const q = QUIZ_QUESTIONS[currentIdx];
+    titleEl.textContent = q.title;
+    contextEl.textContent = q.context;
+    counterText.textContent = `Question ${currentIdx + 1} of ${QUIZ_QUESTIONS.length}`;
+    progressBar.style.width = `${((currentIdx + 1) / QUIZ_QUESTIONS.length) * 100}%`;
+
+    feedbackBox.classList.add('hidden');
+    feedbackBox.className = 'quiz-feedback-box hidden';
+    nextBtn.classList.add('hidden');
+    optionsContainer.innerHTML = '';
+
+    const letters = ['A', 'B', 'C', 'D'];
+    q.options.forEach((opt, idx) => {
+      const btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'quiz-option-btn';
+      btn.innerHTML = `<span class="option-prefix">${letters[idx]}</span> <span>${opt.text}</span>`;
+      btn.addEventListener('click', () => handleSelectOption(opt, btn));
+      optionsContainer.appendChild(btn);
+    });
+  }
+
+  function handleSelectOption(option, clickedBtn) {
+    if (answered) return;
+    answered = true;
+
+    const q = QUIZ_QUESTIONS[currentIdx];
+    const allButtons = optionsContainer.querySelectorAll('.quiz-option-btn');
+    allButtons.forEach(btn => (btn.disabled = true));
+
+    feedbackBox.classList.remove('hidden');
+
+    if (option.correct) {
+      score++;
+      currentScoreEl.textContent = score;
+      clickedBtn.classList.add('correct');
+      feedbackBox.classList.add('correct-box');
+      feedbackIcon.innerHTML = '🎉';
+      feedbackText.innerHTML = `<strong>Mast Jawab!</strong> ${q.explanation}`;
+      playSoundEffect('chime');
+    } else {
+      clickedBtn.classList.add('wrong');
+      feedbackBox.classList.add('wrong-box');
+      feedbackIcon.innerHTML = '😅';
+      // highlight correct one
+      allButtons.forEach((btn, idx) => {
+        if (q.options[idx].correct) btn.classList.add('correct');
+      });
+      feedbackText.innerHTML = `<strong>Aree re!</strong> ${q.explanation}`;
+      playSoundEffect('buzzer');
+    }
+
+    if (currentIdx < QUIZ_QUESTIONS.length - 1) {
+      nextBtn.classList.remove('hidden');
+      nextBtn.innerHTML = `Agla Sawaal <i class="fa-solid fa-arrow-right"></i>`;
+    } else {
+      nextBtn.classList.remove('hidden');
+      nextBtn.innerHTML = `Final Score Dekho <i class="fa-solid fa-trophy"></i>`;
+    }
+  }
+
+  nextBtn.addEventListener('click', () => {
+    playSoundEffect('pop');
+    if (currentIdx < QUIZ_QUESTIONS.length - 1) {
+      currentIdx++;
+      renderQuestion();
+    } else {
+      showResults();
+    }
+  });
+
+  function showResults() {
+    card.classList.add('hidden');
+    resultCard.classList.remove('hidden');
+    document.getElementById('finalPoints').textContent = `${score}/${QUIZ_QUESTIONS.length}`;
+
+    const comm = document.getElementById('resultCommentary');
+    if (score === 6) {
+      comm.textContent = "Outstanding 100%! Aap Akash aur Sweety ke dil ke expert coder ho! Sweety ka 19 June wala proposal officially masterclass hai!";
+      triggerConfetti();
+    } else if (score >= 4) {
+      comm.textContent = "Superb! Aap Akash aur Sweety ki love story ko bohot acche se jaante ho. Farzi engineer bhi impress ho gaya!";
+    } else {
+      comm.textContent = "Acha koshish! Ek baar upar ki kahani dobara padh lo, 11 June aur 19 June ke romantic kisse dil chhu lenge!";
+    }
+    playSoundEffect('fanfare');
+  }
+
+  retakeBtn.addEventListener('click', () => {
+    currentIdx = 0;
+    score = 0;
+    currentScoreEl.textContent = '0';
+    resultCard.classList.add('hidden');
+    card.classList.remove('hidden');
+    renderQuestion();
+    playSoundEffect('pop');
+  });
+
+  renderQuestion();
+}
+
+/* ==========================================================================
+   5. SECRET LOVE TERMINAL
+   ========================================================================== */
+function initTerminal() {
+  const form = document.getElementById('terminalForm');
+  const input = document.getElementById('terminalInput');
+  const output = document.getElementById('terminalOutput');
+  const pillButtons = document.querySelectorAll('.t-pill-btn');
+
+  const COMMANDS = {
+    help: `
+Available Secret Love Commands:
+  • <span class="cmd-highlight">meetup</span>        - Akash aur Sweety ki pehli mulaqat (11 June 2025)
+  • <span class="cmd-highlight">proposal</span>      - Sweety ka legendary proposal (19 June 2025)
+  • <span class="cmd-highlight">sweety</span>        - Who is Sweety? (Akash's perspective)
+  • <span class="cmd-highlight">akash</span>         - Farzi Engineer bio & habits
+  • <span class="cmd-highlight">reasons</span>       - 10 Reasons why Akash loves Sweety
+  • <span class="cmd-highlight">apology</span>       - Farzi Engineer's Standard Apology Script
+  • <span class="cmd-highlight">coffee</span>        - Brew virtual warm coffee for Sweety ☕
+  • <span class="cmd-highlight">secret</span>        - Top secret diary note
+  • <span class="cmd-highlight">clear</span>         - Clear the screen
+    `,
+    meetup: `
+📅 <strong>11 June 2025: The First Meetup</strong>
+Venue: Cozy Cafe (Delhi Brew vibes)
+Status: Akash entered wearing geek glasses, pretending to know tech.
+Result: Sweety smiled -> Akash's CPU usage spiked to 100%!
+Log: "Stack Overflow has solutions for everything, except how to stop staring at Sweety."
+    `,
+    proposal: `
+💍 <strong>19 June 2025: Sweety's Masterstroke Proposal!</strong>
+Author: Sweety (The Boss)
+Commit: "Terminate Akash's single life with immediate effect!"
+Akash's Reaction: Jaw dropped, eyes sparkling, said YES in 0.001 milliseconds!
+Status: Merged directly to Master branch with lifetime protection!
+    `,
+    sweety: `
+👑 <strong>Entity Profile: SWEETY</strong>
+Role: Akash's Life Administrator & Ultimate Bug Fixer
+Superpowers: 
+  - Making Akash smile in 1 second
+  - Looking gorgeous in everything she wears
+  - Turning Akash's boring code into romantic poetry
+Status: Universally loved and protected forever!
+    `,
+    akash: `
+👨‍💻 <strong>Entity Profile: AKASH</strong>
+Designation: Farzi Engineer (Sweety's Personal Coder)
+Weaknesses: 
+  - Sweety's eyes
+  - Sweety's cute angry voice
+  - Semicolons in code
+Strengths: Loves Sweety unconditionally 24x7x365!
+    `,
+    reasons: `
+💖 <strong>10 Reasons Why Akash Loves Sweety:</strong>
+ 1. Sweety ki pyaari si smile.
+ 2. 19 June ko usne courage se propose kiya!
+ 3. Akash ke boring jokes par bhi hasna.
+ 4. Gusse me bhi khana khane ki chinta karna.
+ 5. Akash ke har dream ko support karna.
+ 6. Uska sweet and caring nature.
+ 7. Uske sath ghanto baat karna bhi 5 min jaisa lagna.
+ 8. Pure dil ki saaf hona.
+ 9. Akash ko best version banane me help karna.
+ 10. Bas Sweety hona! ❤️
+    `,
+    apology: `
+🤖 <strong>Farzi Engineer Apology Generator:</strong>
+"Dear Sweety Baby,
+Maine mana 'Bas 2 min me call karta hu' bolkar late kiya,
+Par sach keh raha hu intentions me koi bug nahi tha!
+Chocolates, hugs aur hazaaron sorry aapki seva me haazir hain!
+Please gussa mat ho meri pyari Sweety! 🥺❤️"
+    `,
+    coffee: `
+        (  )   (   )  )
+         ) (   )  (  (
+         ( )  (    ) )
+         _____________
+        <_____________> === [ SWEETY'S SPECIAL COFFEE ]
+        |             |/ )  Brewed with 100% Love & Extra Sugar!
+        |    AKASH    | /   Enjoy with Akash! ☕❤️
+        |   +SWEETY   |/
+        |_____________|
+    `,
+    secret: `
+🤫 <strong>Akash's Secret Log [ENCRYPTED]:</strong>
+"Sweety, tum mere liye sirf meri girlfriend nahi ho, tum meri zindagi ka sukoon ho.
+Jab bhi duniya difficult lagti hai, tumhara ek text meri poori thakan mita deta hai.
+I will always choose you, every single day!"
+    `
+  };
+
+  function executeCommand(raw) {
+    const cmd = raw.trim().toLowerCase();
+    if (!cmd) return;
+
+    // Echo input
+    const inputLine = document.createElement('div');
+    inputLine.className = 't-line prompt-line';
+    inputLine.innerHTML = `<span class="t-prompt">akash@sweety:~$</span> <span class="t-static">${escapeHtml(cmd)}</span>`;
+    output.appendChild(inputLine);
+
+    if (cmd === 'clear') {
+      output.innerHTML = `
+        <div class="t-line info-line">Terminal cleared. Type 'help' for available commands.</div>
+      `;
+      playSoundEffect('terminal');
+      return;
+    }
+
+    const response = COMMANDS[cmd] || `
+      <span style="color: #ef4444;">bash: command not found: '${escapeHtml(cmd)}'. Type 'help' to see list of valid commands.</span>
+    `;
+
+    const outLine = document.createElement('div');
+    outLine.className = cmd === 'coffee' ? 't-line output-line ascii' : 't-line output-line';
+    outLine.innerHTML = response;
+    output.appendChild(outLine);
+
+    output.scrollTop = output.scrollHeight;
+    playSoundEffect('terminal');
+  }
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const val = input.value;
+    executeCommand(val);
+    input.value = '';
+  });
+
+  pillButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const c = btn.getAttribute('data-cmd');
+      executeCommand(c);
+    });
+  });
+}
+
+function escapeHtml(text) {
+  const div = document.createElement('div');
+  div.textContent = text;
+  return div.innerHTML;
+}
+
+/* ==========================================================================
+   6. OFFICIAL LOVE AGREEMENT & SIGNATURE PADS
+   ========================================================================== */
+function initSignaturePads() {
+  // Pre-draw Akash Signature on Canvas
+  const canvasAkash = document.getElementById('sigCanvasAkash');
+  if (canvasAkash) {
+    const ctxA = canvasAkash.getContext('2d');
+    const sigImg = new Image();
+    sigImg.src = 'akash_signature.png';
+    const renderSig = () => {
+      ctxA.clearRect(0, 0, canvasAkash.width, canvasAkash.height);
+      const aspect = sigImg.width / sigImg.height;
+      const drawHeight = 72;
+      const drawWidth = drawHeight * aspect;
+      const drawX = (canvasAkash.width - drawWidth) / 2;
+      const drawY = (canvasAkash.height - drawHeight) / 2;
+      ctxA.drawImage(sigImg, drawX, drawY, drawWidth, drawHeight);
+    };
+    if (sigImg.complete) {
+      renderSig();
+    } else {
+      sigImg.onload = renderSig;
+    }
+  }
+
+  // Sweety Interactive Drawing Canvas & Real Signature
+  const canvasSweety = document.getElementById('sigCanvasSweety');
+  const sweetySigImg = document.getElementById('sweetySigImg');
+  const sweetyStamp = document.getElementById('sweetyStamp');
+  const placeholder = document.getElementById('sweetySigPlaceholder');
+  const clearBtn = document.getElementById('clearSweetySig');
+  const autoSignBtn = document.getElementById('autoSignSweety');
+
+  if (canvasSweety) {
+    const ctxS = canvasSweety.getContext('2d');
+    let isDrawing = false;
+    let hasDrawn = false;
+
+    const sigImgS = new Image();
+    sigImgS.src = 'sweety_signature.png';
+    const renderSweetyCanvas = () => {
+      ctxS.clearRect(0, 0, canvasSweety.width, canvasSweety.height);
+      const aspect = sigImgS.width / sigImgS.height;
+      const drawHeight = 56;
+      const drawWidth = drawHeight * aspect;
+      const drawX = (canvasSweety.width - drawWidth) / 2;
+      const drawY = (canvasSweety.height - drawHeight) / 2;
+      ctxS.drawImage(sigImgS, drawX, drawY, drawWidth, drawHeight);
+    };
+    if (sigImgS.complete) renderSweetyCanvas();
+    else sigImgS.onload = renderSweetyCanvas;
+
+    function getCoords(e) {
+      const rect = canvasSweety.getBoundingClientRect();
+      const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+      const clientY = e.touches ? e.touches[0].clientY : e.clientY;
+      return {
+        x: clientX - rect.left,
+        y: clientY - rect.top
+      };
+    }
+
+    function startDraw(e) {
+      isDrawing = true;
+      hasDrawn = true;
+      if (placeholder) placeholder.style.display = 'none';
+      const pos = getCoords(e);
+      ctxS.beginPath();
+      ctxS.moveTo(pos.x, pos.y);
+      ctxS.strokeStyle = "#be185d";
+      ctxS.lineWidth = 2.5;
+      ctxS.lineCap = "round";
+    }
+
+    function draw(e) {
+      if (!isDrawing) return;
+      e.preventDefault();
+      const pos = getCoords(e);
+      ctxS.lineTo(pos.x, pos.y);
+      ctxS.stroke();
+    }
+
+    function stopDraw() {
+      isDrawing = false;
+    }
+
+    canvasSweety.addEventListener('mousedown', startDraw);
+    canvasSweety.addEventListener('mousemove', draw);
+    window.addEventListener('mouseup', stopDraw);
+
+    canvasSweety.addEventListener('touchstart', startDraw, { passive: false });
+    canvasSweety.addEventListener('touchmove', draw, { passive: false });
+    window.addEventListener('touchend', stopDraw);
+
+    if (clearBtn) {
+      clearBtn.addEventListener('click', () => {
+        if (sweetySigImg) sweetySigImg.style.display = 'none';
+        if (sweetyStamp) sweetyStamp.style.display = 'none';
+        canvasSweety.style.display = 'block';
+        ctxS.clearRect(0, 0, canvasSweety.width, canvasSweety.height);
+        if (placeholder) placeholder.style.display = 'block';
+        hasDrawn = false;
+        playSoundEffect('pop');
+        showToast("Draw mode active: Sweety can now sign on the screen! ✍️");
+      });
+    }
+
+    if (autoSignBtn) {
+      autoSignBtn.addEventListener('click', () => {
+        if (sweetySigImg) sweetySigImg.style.display = 'block';
+        if (sweetyStamp) sweetyStamp.style.display = 'block';
+        canvasSweety.style.display = 'none';
+        if (placeholder) placeholder.style.display = 'none';
+        renderSweetyCanvas();
+        playSoundEffect('chime');
+        showToast("Sweety Srivastav real signature applied! 💖");
+      });
+    }
+  }
+}
+
+function initAgreementActions() {
+  const printBtn = document.getElementById('downloadAgreementBtn');
+  if (printBtn) {
+    printBtn.addEventListener('click', () => {
+      const originalTitle = document.title;
+      document.title = "Akash_and_Sweety_Official_Love_Agreement";
+      window.print();
+      setTimeout(() => {
+        document.title = originalTitle;
+      }, 1500);
+    });
+  }
+
+  const copyShareBtn = document.getElementById('copyShareBtn');
+  if (copyShareBtn) {
+    copyShareBtn.addEventListener('click', () => {
+      const pledge = `❤️ Akash & Sweety Love Pledge:
+11 June 2025 ko pehli mulaqat hui, 19 June 2025 ko Sweety ne propose kiya!
+Clause 1.0: Sweety holds 100% Admin Rights on Akash's Heart forever!
+No bugs allowed, only infinite love! 💖`;
+      navigator.clipboard.writeText(pledge).then(() => {
+        showToast("Love pledge copied to clipboard! Share it with Sweety! 💖");
+        playSoundEffect('chime');
+      });
+    });
+  }
+}
+
+/* ==========================================================================
+   7. SECRET LOVE LETTER MODAL
+   ========================================================================== */
+function initLoveCapsuleModal() {
+  const openBtn = document.getElementById('openLetterBtn');
+  const closeBtn = document.getElementById('closeLetterBtn');
+  const modal = document.getElementById('letterModal');
+
+  if (openBtn && modal) {
+    openBtn.addEventListener('click', () => {
+      modal.classList.remove('hidden');
+      playSoundEffect('chime');
+    });
+  }
+
+  if (closeBtn && modal) {
+    closeBtn.addEventListener('click', () => {
+      modal.classList.add('hidden');
+      playSoundEffect('pop');
+    });
+  }
+
+  if (modal) {
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        modal.classList.add('hidden');
+      }
+    });
+  }
+}
+
+/* ==========================================================================
+   8. INTERACTIVE PROPOSAL ARENA (RUNAWAY "NO" BUTTON & CELEBRATION "YES")
+   ========================================================================== */
+function initProposalArena() {
+  const yesBtn = document.getElementById('yesLoveBtn');
+  const noBtn = document.getElementById('noLoveBtn');
+  const arena = document.getElementById('btnArena');
+  const celebration = document.getElementById('celebrationScreen');
+  const closeCelebrationBtn = document.getElementById('closeCelebrationBtn');
+  const hintEl = document.getElementById('runawayHint');
+
+  const runawayMessages = [
+    "Error 404: Option Not Found! 😜",
+    "Sweety, try again! Hehe 🏃‍♂️",
+    "Akash won't allow NO! 💕",
+    "Permission Denied by Sweety's Heart! 🙅‍♀️",
+    "Are you sure? Click YES baby! 🥺",
+    "Button deprecated by Farzi Engineer! 💻",
+    "Sweety, system crash: Only YES supported! 💖",
+    "Access Restricted: Love is mandatory! 💍"
+  ];
+  let runawayCount = 0;
+
+  function spawnPuff(x, y) {
+    const puff = document.createElement('div');
+    puff.className = 'escape-sparkle-puff';
+    puff.textContent = ['😜', '💨', '💔', '🏃‍♀️', '✨'][Math.floor(Math.random() * 5)];
+    puff.style.left = `${x}px`;
+    puff.style.top = `${y}px`;
+    if (arena) arena.appendChild(puff);
+    setTimeout(() => puff.remove(), 800);
+  }
+
+  function dodgeButton(e) {
+    if (!arena || !noBtn || !yesBtn) return;
+    const arenaRect = arena.getBoundingClientRect();
+    const btnRect = noBtn.getBoundingClientRect();
+    const yesRect = yesBtn.getBoundingClientRect();
+
+    // Position of puff relative to arena
+    const puffX = btnRect.left - arenaRect.left + btnRect.width / 2;
+    const puffY = btnRect.top - arenaRect.top + btnRect.height / 2;
+    spawnPuff(puffX, puffY);
+
+    // Arena bounds with margin
+    const minX = 15;
+    const maxX = arenaRect.width - btnRect.width - 15;
+    const minY = 10;
+    const maxY = arenaRect.height - btnRect.height - 10;
+
+    // Pointer coordinates relative to arena
+    const pointerX = e && (e.clientX || (e.touches && e.touches[0] && e.touches[0].clientX)) 
+      ? (e.clientX || e.touches[0].clientX) - arenaRect.left 
+      : arenaRect.width / 2;
+    const pointerY = e && (e.clientY || (e.touches && e.touches[0] && e.touches[0].clientY))
+      ? (e.clientY || e.touches[0].clientY) - arenaRect.top 
+      : arenaRect.height / 2;
+
+    // Pick candidate coordinates away from pointer and NEVER overlapping yesBtn
+    let chosenX = minX;
+    let chosenY = minY;
+    let maxDist = -1;
+
+    // Yes button boundary with safe buffer
+    const yesLeft = yesRect.left - arenaRect.left - 25;
+    const yesRight = yesRect.right - arenaRect.left + 25;
+    const yesTop = yesRect.top - arenaRect.top - 20;
+    const yesBottom = yesRect.bottom - arenaRect.top + 20;
+
+    for (let i = 0; i < 15; i++) {
+      const candX = minX + Math.random() * (maxX - minX);
+      const candY = minY + Math.random() * (maxY - minY);
+
+      // Check collision with YES button
+      const overlapsYes = (
+        candX + btnRect.width > yesLeft &&
+        candX < yesRight &&
+        candY + btnRect.height > yesTop &&
+        candY < yesBottom
+      );
+
+      if (!overlapsYes) {
+        const distToPointer = Math.hypot(candX - pointerX, candY - pointerY);
+        if (distToPointer > maxDist) {
+          maxDist = distToPointer;
+          chosenX = candX;
+          chosenY = candY;
+        }
+      }
+    }
+
+    // Offset relative to the button's static flow position
+    noBtn.style.position = 'relative';
+    const offsetX = chosenX - (btnRect.left - arenaRect.left);
+    const offsetY = chosenY - (btnRect.top - arenaRect.top);
+    const randomRot = (Math.random() - 0.5) * 22;
+
+    noBtn.style.transform = `translate(${offsetX}px, ${offsetY}px) rotate(${randomRot}deg)`;
+    noBtn.textContent = runawayMessages[runawayCount % runawayMessages.length];
+    noBtn.classList.add('dodge-wobble');
+    setTimeout(() => noBtn.classList.remove('dodge-wobble'), 400);
+
+    runawayCount++;
+
+    // Enlarge YES button smoothly via CSS variable
+    const currentScale = 1 + Math.min(runawayCount * 0.08, 0.45);
+    yesBtn.style.setProperty('--yes-scale', currentScale);
+
+    if (hintEl) {
+      hintEl.textContent = `Aww, Sweety! You can't click NO! Only YES is authorized! ❤️ (${runawayCount} attempts)`;
+    }
+
+    playSoundEffect('pop');
+  }
+
+  if (noBtn) {
+    noBtn.addEventListener('mouseenter', dodgeButton);
+    noBtn.addEventListener('touchstart', (e) => {
+      e.preventDefault();
+      dodgeButton(e);
+    }, { passive: false });
+    noBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      dodgeButton(e);
+    });
+  }
+
+  if (yesBtn) {
+    yesBtn.addEventListener('click', () => {
+      if (celebration) {
+        celebration.classList.remove('hidden');
+        triggerConfetti();
+        if (typeof window.showerManyHearts === 'function') {
+          window.showerManyHearts(28);
+        }
+        playSoundEffect('fanfare');
+      }
+    });
+  }
+
+  if (closeCelebrationBtn && celebration) {
+    closeCelebrationBtn.addEventListener('click', () => {
+      celebration.classList.add('hidden');
+    });
+  }
+
+  const replayBtn = document.getElementById('replayCelebrationBtn');
+  if (replayBtn) {
+    replayBtn.addEventListener('click', () => {
+      triggerConfetti();
+      if (typeof window.showerManyHearts === 'function') {
+        window.showerManyHearts(24);
+      }
+      playSoundEffect('fanfare');
+    });
+  }
+}
+
+/* ==========================================================================
+   9. CELEBRATION CONFETTI CANNON (High-Speed GPU-Optimized Cannon)
+   ========================================================================== */
+function triggerConfetti() {
+  const oldCanvas = document.getElementById('celebrationConfettiCanvas');
+  if (oldCanvas) oldCanvas.remove();
+
+  const canvas = document.createElement('canvas');
+  canvas.id = 'celebrationConfettiCanvas';
+  canvas.style.position = 'fixed';
+  canvas.style.top = '0';
+  canvas.style.left = '0';
+  canvas.style.width = '100vw';
+  canvas.style.height = '100vh';
+  canvas.style.zIndex = '9999';
+  canvas.style.pointerEvents = 'none';
+  document.body.appendChild(canvas);
+
+  const ctx = canvas.getContext('2d');
+  const width = window.innerWidth;
+  const height = window.innerHeight;
+  const isMobile = width < 768;
+  const dpr = Math.min(window.devicePixelRatio || 1, 1.5);
+  canvas.width = Math.round(width * dpr);
+  canvas.height = Math.round(height * dpr);
+  ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+
+  const pieces = [];
+  const colors = ['#ff2a70', '#f43f5e', '#38bdf8', '#fbbf24', '#a855f7', '#10b981', '#ec4899', '#ffd166'];
+  const count = isMobile ? 45 : 75;
+
+  // Dual cannons with fast snappy explosive velocity
+  for (let i = 0; i < count; i++) {
+    const isLeft = i % 2 === 0;
+    const originX = isLeft ? width * 0.15 : width * 0.85;
+    const originY = height * 0.82;
+    const baseAngle = isLeft ? -Math.PI / 4 : -Math.PI * 0.75;
+    const angle = baseAngle + (Math.random() - 0.5) * 0.6;
+    const speed = Math.random() * 24 + 18;
+
+    pieces.push({
+      x: originX,
+      y: originY,
+      vx: Math.cos(angle) * speed,
+      vy: Math.sin(angle) * speed,
+      w: Math.random() * 10 + 6,
+      h: Math.random() * 13 + 7,
+      color: colors[Math.floor(Math.random() * colors.length)],
+      rotation: Math.random() * Math.PI * 2,
+      vRot: (Math.random() - 0.5) * 0.35,
+      tilt: Math.random() * Math.PI * 2,
+      vTilt: Math.random() * 0.28 + 0.14,
+      alpha: 1.0,
+      decay: Math.random() * 0.018 + 0.013, // Snappy ~1.8s cleanup
+      isCircle: Math.random() < 0.25
+    });
+  }
+
+  function animate() {
+    ctx.clearRect(0, 0, width, height);
+    let active = 0;
+
+    for (let p of pieces) {
+      if (p.alpha <= 0 || p.y > height + 40) continue;
+      active++;
+
+      p.x += p.vx;
+      p.y += p.vy;
+      p.vx *= 0.96; // Snappy air drag
+      p.vy += 0.95; // Lively realistic gravity
+      p.rotation += p.vRot;
+      p.tilt += p.vTilt;
+      p.alpha -= p.decay;
+
+      const scaleX = Math.cos(p.tilt);
+
+      ctx.save();
+      ctx.translate(p.x, p.y);
+      ctx.rotate(p.rotation);
+      ctx.scale(scaleX, 1);
+      ctx.globalAlpha = Math.max(0, p.alpha);
+      ctx.fillStyle = p.color;
+
+      if (p.isCircle) {
+        ctx.beginPath();
+        ctx.arc(0, 0, p.w * 0.45, 0, Math.PI * 2);
+        ctx.fill();
+      } else {
+        ctx.fillRect(-p.w / 2, -p.h / 2, p.w, p.h);
+      }
+      ctx.restore();
+    }
+
+    if (active > 0) {
+      requestAnimationFrame(animate);
+    } else {
+      canvas.remove();
+    }
+  }
+
+  requestAnimationFrame(animate);
+}
+
+/* ==========================================================================
+   10. WEB AUDIO API LO-FI ROMANTIC MUSIC SYNTHESIZER
+   Plays gentle chill chords & arpeggios out of the box with zero external files!
+   ========================================================================== */
+let audioCtx = null;
+let isPlayingMusic = false;
+let musicInterval = null;
+
+function initAudioSynthesizer() {
+  const toggleBtn = document.getElementById('musicToggleBtn');
+  const themeToggleBtn = document.getElementById('themeToggleBtn');
+
+  if (toggleBtn) {
+    toggleBtn.addEventListener('click', () => {
+      if (!audioCtx) {
+        audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+      }
+
+      if (audioCtx.state === 'suspended') {
+        audioCtx.resume();
+      }
+
+      if (isPlayingMusic) {
+        stopLoFiMusic();
+        toggleBtn.classList.remove('playing');
+        showToast("Lo-Fi Music Paused ⏸️");
+      } else {
+        startLoFiMusic();
+        toggleBtn.classList.add('playing');
+        showToast("Romantic Lo-Fi Chords Playing 🎶❤️");
+      }
+    });
+  }
+
+  if (themeToggleBtn) {
+    themeToggleBtn.addEventListener('click', () => {
+      document.body.classList.toggle('alt-neon-mode');
+      showToast("Neon Glow Theme Toggled! ✨");
+      playSoundEffect('pop');
+    });
+  }
+}
+
+function startLoFiMusic() {
+  isPlayingMusic = true;
+  // Beautiful mellow chords: Cmaj7, Am7, Fmaj7, G7
+  const chords = [
+    [261.63, 329.63, 392.00, 493.88], // Cmaj7
+    [220.00, 261.63, 329.63, 392.00], // Am7
+    [174.61, 220.00, 261.63, 329.63], // Fmaj7
+    [196.00, 246.94, 293.66, 349.23]  // G7
+  ];
+
+  let chordIndex = 0;
+
+  function playChord(notes) {
+    if (!audioCtx || !isPlayingMusic) return;
+    const now = audioCtx.currentTime;
+
+    notes.forEach((freq, idx) => {
+      const osc = audioCtx.createOscillator();
+      const gain = audioCtx.createGain();
+      const filter = audioCtx.createBiquadFilter();
+
+      osc.type = 'triangle';
+      osc.frequency.setValueAtTime(freq, now + idx * 0.08);
+
+      // Low pass filter for that warm, cozy lofi vibe
+      filter.type = 'lowpass';
+      filter.frequency.setValueAtTime(680, now);
+
+      gain.gain.setValueAtTime(0, now);
+      gain.gain.linearRampToValueAtTime(0.045, now + 0.3 + idx * 0.08);
+      gain.gain.exponentialRampToValueAtTime(0.0001, now + 2.8);
+
+      osc.connect(filter);
+      filter.connect(gain);
+      gain.connect(audioCtx.destination);
+
+      osc.start(now + idx * 0.08);
+      osc.stop(now + 3.0);
+    });
+  }
+
+  playChord(chords[chordIndex]);
+  musicInterval = setInterval(() => {
+    chordIndex = (chordIndex + 1) % chords.length;
+    playChord(chords[chordIndex]);
+  }, 2800);
+}
+
+function stopLoFiMusic() {
+  isPlayingMusic = false;
+  if (musicInterval) {
+    clearInterval(musicInterval);
+    musicInterval = null;
+  }
+}
+
+function playSoundEffect(type) {
+  try {
+    if (!audioCtx) {
+      audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    }
+    if (audioCtx.state === 'suspended') {
+      audioCtx.resume();
+    }
+
+    const now = audioCtx.currentTime;
+    const osc = audioCtx.createOscillator();
+    const gain = audioCtx.createGain();
+
+    if (type === 'chime') {
+      osc.type = 'sine';
+      osc.frequency.setValueAtTime(523.25, now);
+      osc.frequency.exponentialRampToValueAtTime(1046.5, now + 0.35);
+      gain.gain.setValueAtTime(0.12, now);
+      gain.gain.exponentialRampToValueAtTime(0.001, now + 0.35);
+      osc.connect(gain);
+      gain.connect(audioCtx.destination);
+      osc.start(now);
+      osc.stop(now + 0.35);
+    } else if (type === 'buzzer') {
+      osc.type = 'sawtooth';
+      osc.frequency.setValueAtTime(160, now);
+      gain.gain.setValueAtTime(0.1, now);
+      gain.gain.exponentialRampToValueAtTime(0.001, now + 0.25);
+      osc.connect(gain);
+      gain.connect(audioCtx.destination);
+      osc.start(now);
+      osc.stop(now + 0.25);
+    } else if (type === 'pop') {
+      osc.type = 'sine';
+      osc.frequency.setValueAtTime(320, now);
+      osc.frequency.exponentialRampToValueAtTime(640, now + 0.08);
+      gain.gain.setValueAtTime(0.08, now);
+      gain.gain.exponentialRampToValueAtTime(0.001, now + 0.08);
+      osc.connect(gain);
+      gain.connect(audioCtx.destination);
+      osc.start(now);
+      osc.stop(now + 0.08);
+    } else if (type === 'terminal') {
+      osc.type = 'square';
+      osc.frequency.setValueAtTime(880, now);
+      gain.gain.setValueAtTime(0.04, now);
+      gain.gain.exponentialRampToValueAtTime(0.001, now + 0.05);
+      osc.connect(gain);
+      gain.connect(audioCtx.destination);
+      osc.start(now);
+      osc.stop(now + 0.05);
+    } else if (type === 'fanfare') {
+      const notes = [523.25, 659.25, 783.99, 1046.5];
+      notes.forEach((n, i) => {
+        const o = audioCtx.createOscillator();
+        const g = audioCtx.createGain();
+        o.type = 'triangle';
+        o.frequency.setValueAtTime(n, now + i * 0.12);
+        g.gain.setValueAtTime(0.1, now + i * 0.12);
+        g.gain.exponentialRampToValueAtTime(0.001, now + i * 0.12 + 0.5);
+        o.connect(g);
+        g.connect(audioCtx.destination);
+        o.start(now + i * 0.12);
+        o.stop(now + i * 0.12 + 0.5);
+      });
+    }
+  } catch (e) {
+    // Audio context not allowed or supported
+  }
+}
+
+/* ==========================================================================
+   TOAST HELPER
+   ========================================================================== */
+function showToast(message) {
+  let toast = document.querySelector('.custom-toast');
+  if (!toast) {
+    toast = document.createElement('div');
+    toast.className = 'custom-toast';
+    toast.style.position = 'fixed';
+    toast.style.bottom = '85px';
+    toast.style.right = '25px';
+    toast.style.background = 'rgba(15, 23, 42, 0.95)';
+    toast.style.color = '#fff';
+    toast.style.border = '1px solid #ff2a70';
+    toast.style.boxShadow = '0 8px 25px rgba(255, 42, 112, 0.4)';
+    toast.style.padding = '12px 20px';
+    toast.style.borderRadius = '9999px';
+    toast.style.fontSize = '0.92rem';
+    toast.style.fontWeight = '600';
+    toast.style.zIndex = '5000';
+    toast.style.transition = 'all 0.3s ease';
+    document.body.appendChild(toast);
+  }
+
+  toast.textContent = message;
+  toast.style.opacity = '1';
+  toast.style.transform = 'translateY(0)';
+
+  setTimeout(() => {
+    toast.style.opacity = '0';
+    toast.style.transform = 'translateY(10px)';
+  }, 3200);
+}
+
+/* ==========================================================================
+   11. BUTTERY SMOOTH SCROLL REVEAL SYSTEM
+   ========================================================================== */
+function initScrollReveal() {
+  const targets = document.querySelectorAll(
+    '.hero-content, .hero-card-wrapper, .section-heading, .counter-card, ' +
+    '.chapter-grid, .quiz-card, .terminal-window, .contract-paper, ' +
+    '.capsule-card, .interactive-proposal-card'
+  );
+
+  targets.forEach(el => {
+    el.classList.add('reveal-item');
+  });
+
+  const ribbon = document.querySelector('.milestone-ribbon');
+  if (ribbon) {
+    ribbon.classList.add('stagger-group');
+    ribbon.querySelectorAll('.ribbon-item').forEach(item => item.classList.add('reveal-item'));
+  }
+
+  // Graceful fallback for older engines
+  if (!('IntersectionObserver' in window)) {
+    document.querySelectorAll('.reveal-item').forEach(el => el.classList.add('revealed'));
+    return;
+  }
+
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('revealed');
+        obs.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.1,
+    rootMargin: '0px 0px -40px 0px'
+  });
+
+  document.querySelectorAll('.reveal-item').forEach(el => observer.observe(el));
+}
+
+
+  </script>
+</body>
+</html>
